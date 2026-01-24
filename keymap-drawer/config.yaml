@@ -17,14 +17,6 @@ parse_config:
     '&kp LS(INS)': Paste
     '&kp LG(L)': Lock
 
-    '&m_elmap ELMAP': '%{ }'
-    '&m_elpipe ELPIPE': '|>'
-    '&m_insl INSL': Inspect
-    '&m_ldsh LDSH': '<-'
-    '&m_rdsh RDSH': '->'
-    '&m_leq LEQ': '<='
-    '&m_req REQ': '=>'
-
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
 

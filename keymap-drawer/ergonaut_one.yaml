@@ -1,5 +1,6 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
-  default:
+  MAIN:
   - {t: ']', h: Gui}
   - Q
   - W
@@ -36,13 +37,13 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: raise}
+  - {t: ↹, h: NUM}
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
+  - {t: ⏎, h: SYM}
+  - {t: Esc, h: SYM}
   - {t: ⌫, h: Shift}
-  - {t: DELETE, h: raise}
-  lower:
+  - {t: DELETE, h: NUM}
+  SYM:
   - Gui
   - '{'
   - '&m_ldsh'
@@ -67,7 +68,7 @@ layers:
   - (
   - )
   - Ctrl
-  - Alt
+  - {t: '=', h: Alt}
   - '1'
   - '2'
   - '3'
@@ -85,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  NUM:
   - {t: F1, h: Gui}
   - F2
   - F3
@@ -104,10 +105,10 @@ layers:
   - ↑
   - →
   - PAGE UP
-  - ←
-  - ↓
-  - ↑
-  - →
+  - BRI UP
+  - Vol Up
+  - MUTE
+  - Vol Down
   - '-'
   - Ctrl
   - Alt
@@ -116,10 +117,10 @@ layers:
   - ↓
   - End
   - PAGE DOWN
-  - Home
-  - PAGE DOWN
-  - PAGE UP
-  - End
+  - BRI DN
+  - ⏮️
+  - PLAY PAUSE
+  - ⏭️
   - _
   - Alt
   - {type: held}
@@ -128,18 +129,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  ADJ:
   - Boot
+  - '&studio_unlock'
   - ''
-  - AC DESKTOP SHOW ALL WINDOWS
-  - BRI DN
-  - BRI UP
-  - AC DESKTOP SHOW ALL APPLICATIONS
   - ''
-  - MUTE
-  - VOLUME DOWN
-  - VOLUME UP
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
   - Boot
   - BT CLR
   - BT 1
@@ -160,9 +161,9 @@ layers:
   - ''
   - ''
   - ''
-  - PLAY PAUSE
-  - ⏮️
-  - ⏭️
+  - ''
+  - ''
+  - ''
   - ''
   - Reset
   - {type: held}
