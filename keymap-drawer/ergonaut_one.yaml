@@ -1,4 +1,6 @@
-layout: {zmk_keyboard: ergonaut_one}
+layout:
+  zmk_keyboard: corneish_zen
+  layout_name: foostan_corne_6col_layout
 layers:
   MAIN:
   - {t: ']', h: Gui}
@@ -37,23 +39,23 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: NUM}
+  - {t: ↹, h: NAV}
   - {t: ␣, h: Shift}
   - {t: ⏎, h: SYM}
   - {t: Esc, h: SYM}
   - {t: ⌫, h: Shift}
-  - {t: DELETE, h: NUM}
+  - {t: DELETE, h: NAV}
   SYM:
   - Gui
   - '{'
-  - '&m_ldsh'
+  - <-
   - '-'
-  - '&m_rdsh'
-  - '&m_elmap'
-  - '&m_insl'
-  - '&m_leq'
+  - ->
+  - '%{'
+  - insl
+  - <=
   - '='
-  - '&m_req'
+  - =>
   - '}'
   - Gui
   - Ctrl
@@ -79,14 +81,14 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&m_elpipe'
+  - '|>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUM:
+  NAV:
   - {t: F1, h: Gui}
   - F2
   - F3
@@ -105,10 +107,10 @@ layers:
   - ↑
   - →
   - PAGE UP
-  - BRI UP
-  - Vol Up
-  - MUTE
-  - Vol Down
+  - ←
+  - ↓
+  - ↑
+  - →
   - '-'
   - Ctrl
   - Alt
@@ -117,10 +119,10 @@ layers:
   - ↓
   - End
   - PAGE DOWN
-  - BRI DN
-  - ⏮️
-  - PLAY PAUSE
-  - ⏭️
+  - Home
+  - PAGE DOWN
+  - PAGE UP
+  - End
   - _
   - Alt
   - {type: held}
@@ -130,18 +132,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ADJ:
-  - Boot
-  - '&studio_unlock'
+  - BOOT
+  - UNLOCK
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&studio_unlock'
-  - Boot
+  - Bri-
+  - Bri+
+  - Windows
+  - Apps
+  - Mute
+  - Vol Down
+  - Vol Up
+  - UNLOCK
+  - BOOT
   - BT CLR
   - BT 1
   - BT 2
@@ -154,18 +156,18 @@ layers:
   - BT 2
   - BT 1
   - BT CLR
-  - Reset
+  - RESET
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
+  - Play
+  - ⏮️
+  - ⏭️
   - ''
-  - ''
-  - ''
-  - ''
-  - Reset
+  - RESET
   - {type: held}
   - ''
   - {type: held}

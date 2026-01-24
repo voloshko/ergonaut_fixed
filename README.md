@@ -1,66 +1,205 @@
-# ZMK Firmware for Ergonaut One keyboard
+# ZMK Config for Ergonaut One: Elixir + Vim + macOS
 
-This is a repository for a ZMK Firmware for Ergonaut One keyboard.
+Custom ZMK firmware configuration for Ergonaut One keyboard, optimized for Elixir development in Vim on macOS.
 
-## Default keymap
+## Design Philosophy
 
-Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
+This layout is designed around three core workflows:
 
-Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) – check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
+1. **Elixir-first symbols** - Quick access to Elixir operators and syntax
+2. **Vim-style navigation** - Arrow keys positioned for vim-like movement
+3. **macOS integration** - Native support for Mission Control, media, and brightness
 
-![Keymap Representation](./keymap-drawer/ergonaut_one.svg?raw=true "Keymap Representation")
+## Keymap
 
-This layout is heavily inspired from [Watchman 42-key layout](https://github.com/aroum/Watchman-layouts)
+![Keymap Visualization](./keymap-drawer/ergonaut_one.svg?raw=true "Keymap")
 
-## FAQ
+*Auto-generated via [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) - updates automatically when keymap changes.*
 
-- [FAQ](#faq)
-  - [How to change the keymap?](#how-to-change-the-keymap)
-  - [How to flash the keyboard?](#how-to-flash-the-keyboard)
-  - [How to pair halves?](#how-to-pair-halves)
-  - [Problems](#problems)
-    - [I'm getting File Transfer Error after copying firmware to the keyboard](#im-getting-file-transfer-error-after-copying-firmware-to-the-keyboard)
+## Layer Breakdown
 
-### How to change the keymap?
+### MAIN Layer
+Standard QWERTY with home row mods:
+- **Outer columns**: Brackets and special chars with Gui hold-taps
+- **Home row**: Modifiers on hold (Ctrl, Alt)
+- **Thumbs**: Layer access via hold-taps (SYM, NAV, Shift)
 
-1. Fork or use this repository as a template https://github.com/ergonautkb/one-zmk-config.
-2. Enable Github Actions for your repository.
+### SYM Layer - Elixir Operators
+Optimized for Elixir development with dedicated macros:
 
-You have two options on how to configure your desired keymap:
+**Top row (Elixir-specific):**
+- `<-` - Pattern matching arrow
+- `->` - Function arrow / case clause
+- `%{` - Map literal (auto-spaced)
+- `insl` - IO.inspect( ,label: "via vim macro")
+- `<=` - Less than or equal (auto-spaced)
+- `=>` - Map key-value separator (auto-spaced)
+- `|>` - Pipe operator (the heart of Elixir)
 
-#### Option 1. Keymap Editor
+**Middle row:** Standard symbols (`!@#$%^&*()`)
 
-1. Open [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/).
-2. Connect it to your Github account and give an access to your repository to Keymap Editor's app.
-3. Make changes to your keymap and press `Save` - it will trigger software build. Wait for it to complete.
-4. Grab the `firmware.zip` archive.
+**Bottom row:** Numbers 0-9 with quick access
 
-#### Option 2. Manual
+### NAV Layer - Vim-Style Navigation
+Dual arrow key clusters for vim-like movement:
 
-1. Make changes to the [ergonaut_one.keymap](config/ergonaut_one.keymap) file using your favorite text editor.
-2. Commit changes to your repository.
-3. Go to `Actions` tab in your Github repository, locate the latest build and wait for it to complete.
-4. Grab the `firmware.zip` archive
+**Left cluster:**
+- Arrow keys with `+/-/=` for quick math
+- Home/End for line navigation
 
-### How to flash the keyboard?
+**Right cluster:**
+- Mirrored arrows for convenience
+- PageUp/PageDown for scrolling
 
-1. Obtain `firmware.zip`
-2. Unzip `firmware.zip` - you should have `ergonaut_one_left-seeeduino_xiao_ble-zmk.uf2` and `ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2` files
-3. Turn off the power for selected halve (move slider to position `OFF`)
-4. Connect selected halve to the PC via USB-C cable
-5. Press `RESET` button **twice** to enter DFU mode - you should see new USB device in your file manager
-6. Copy the corresponding firmware to the root directory of the new USB device
-7. Disconnect selected halve from the PC
-8. Repeat steps 3-7 for the other halve
+**Top row:** F1-F12 with Gui hold-taps
 
-### How to pair halves?
+### ADJ Layer - System Controls
+Activated when both SYM + NAV are held (tri-layer):
 
-1. Turn off the power for both halves (move slider to position `OFF`)
-2. Turn on the power for both halves (move slider to position `ON`)
-3. Press `RESET` button **once** on both halves **simultaneously**
+**macOS controls:**
+- Brightness: `Bri+` / `Bri-`
+- Mission Control: `Windows` (Show All Windows) / `Apps` (Show All Apps)
+- Media: `Mute`, `Vol-`, `Vol+`, `Play`, `Prev`, `Next`
 
-### Problems
+**Bluetooth:**
+- `BT 1-5` - Switch between 5 paired devices
+- `BT CLR` - Clear current pairing
 
-#### I'm getting File Transfer Error after copying firmware to the keyboard
+**System:**
+- `BOOT` - Enter bootloader
+- `RESET` - Soft reset
+- `UNLOCK` - Studio unlock (for ZMK Studio)
 
-It's OK. Proof: https://zmk.dev/docs/troubleshooting#file-transfer-error
+## Key Features
+
+### Elixir Macros
+All Elixir operators are pre-spaced for faster typing:
+```elixir
+# Instead of typing: space + < + - + space
+# Just tap: <-
+
+result <- async_task()
+%{key => value}
+data |> transform() |> process()
+```
+
+### Vim Navigation
+Natural arrow placement on right hand, mirrored on left for flexibility:
+```
+Left hand:         Right hand:
+  ↑                   ↑
+← ↓ →     mirrors   ← ↓ →
+```
+
+### macOS Integration
+Native shortcuts for:
+- Mission Control (Cmd+F3 variants)
+- Brightness controls
+- Media playback
+
+### Software Bootloader
+No need to disassemble the keyboard for firmware updates:
+- **SYM + NAV + ]** (left) or **[** (right) enters bootloader
+- Drag-and-drop `.uf2` files over USB
+- Physical RESET button only needed if keyboard is completely bricked
+
+## Setup
+
+### Flashing Firmware
+
+1. Download latest `firmware.zip` from [Actions](../../actions) tab
+2. Extract to get `ergonaut_one_left-*.uf2` and `ergonaut_one_right-*.uf2`
+
+**Method 1: Software Bootloader (Recommended)**
+
+For **left half**:
+1. Connect via USB-C (power can stay ON)
+2. Hold **SYM + NAV** (both thumb keys) to activate ADJ layer
+3. Tap **]** key (far left of top row = BOOT)
+4. Drive mounts automatically
+5. Copy `ergonaut_one_left-*.uf2` to the drive
+6. Done! Keyboard reboots automatically
+
+For **right half**:
+1. Connect via USB-C (power can stay ON)
+2. Hold **SYM + NAV** to activate ADJ layer
+3. Tap **[** key (far right of top row = BOOT)
+4. Drive mounts automatically
+5. Copy `ergonaut_one_right-*.uf2` to the drive
+6. Done!
+
+**Method 2: Hardware Reset (if software method fails)**
+
+Only needed if keyboard is completely non-responsive:
+1. Turn power OFF
+2. Connect via USB-C
+3. Double-press physical RESET button (requires opening case)
+4. Copy `.uf2` file to mounted drive
+
+### Pairing Halves
+
+1. Turn power OFF on both halves
+2. Turn power ON on both halves
+3. Press RESET **once** on both halves **simultaneously**
+
+### Bluetooth Pairing
+
+Hold SYM + NAV, then tap BT 1-5 to switch profiles:
+- **BT 1-5**: Select device slot
+- **BT CLR**: Clear current pairing (pair new device)
+
+## Customization
+
+### Editing the Keymap
+
+Two options:
+
+#### Option 1: Keymap Editor (GUI)
+1. Open [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
+2. Connect to your GitHub account
+3. Make changes and save - firmware builds automatically
+
+#### Option 2: Manual (recommended for advanced users)
+1. Edit [`config/ergonaut_one.keymap`](config/ergonaut_one.keymap)
+2. Commit and push
+3. Download built firmware from Actions tab
+
+### Customizing Elixir Macros
+
+Macros are defined in the keymap file. To modify:
+
+```c
+macros {
+    m_elpipe: m_elpipe {
+        bindings = <&kp PIPE &kp GT &kp SPACE>;
+        // Produces: |>
+    };
+}
+```
+
+### Visualization
+
+The keymap visualization auto-updates via GitHub Actions when you change the keymap. Configuration is in [`keymap-drawer/config.yaml`](keymap-drawer/config.yaml).
+
+## Troubleshooting
+
+### "File Transfer Error" after flashing
+This is normal and expected behavior. See [ZMK docs](https://zmk.dev/docs/troubleshooting#file-transfer-error).
+
+### Halves not connecting
+1. Turn both OFF
+2. Turn both ON
+3. Simultaneously press RESET on both halves
+
+### Keys not working as expected
+Check layer indicators - you might be on the wrong layer. Press SYM or NAV thumb keys to return to MAIN.
+
+## Credits
+
+Hardware: [Ergonaut One](https://github.com/ergonautkb/one) by ergonautkb
+
+Original layout inspiration:
+- [Miryoku](https://github.com/manna-harbour/miryoku) - Home row mods concept
+- [Watchman layouts](https://github.com/aroum/Watchman-layouts) - Layer structure
+
+Heavily modified for Elixir/Vim/macOS workflow.

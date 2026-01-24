@@ -12,11 +12,12 @@ on:
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write  # allow workflow to commit to the repo
     with:
       keymap_patterns: 'config/*.keymap'
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
-      draw_args: "ergonaut_one:'-k corne_rotated -l LAYOUT_split_3x6_3'"
-      json_path: keymap-drawer/layouts
+      draw_args: "ergonaut_one:'-k corneish_zen -l foostan_corne_6col_layout'"

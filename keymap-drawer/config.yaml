@@ -1,8 +1,17 @@
 # configuration for https://github.com/caksoylar/keymap-drawer
 parse_config:
   raw_binding_map:
-    '&sys_reset': Reset
-    '&bootloader': Boot
+    "&m_ldsh": "<-"
+    "&m_rdsh": "->"
+    "&m_elmap": "%{"
+    "&m_insl": "insl"
+    "&m_leq": "<="
+    "&m_req": "=>"
+    "&m_elpipe": "|>"
+
+    "&bootloader": "BOOT"
+    "&studio_unlock": "UNLOCK"
+    "&sys_reset": "RESET"
     '&swapper': Win Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
@@ -67,8 +76,18 @@ parse_config:
     # custom mappings
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
+    C_VOLUME_UP: Vol Up
+    C_VOLUME_DOWN: Vol Down
+    C_MUTE: Mute
     C_AL_CALC: Calc
     C_PP: Play Pause
+    C_PLAY_PAUSE: Play
+    C_PREV: Prev
+    C_NEXT: Next
+    C_BRI_UP: Bri+
+    C_BRI_DEC: Bri-
+    C_AC_DESKTOP_SHOW_ALL_WINDOWS: Windows
+    C_AC_DESKTOP_SHOW_ALL_APPLICATIONS: Apps
 
     LCTRL: Ctrl
     RCTRL: Ctrl
@@ -171,3 +190,45 @@ parse_config:
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto
+  key_w: 60
+  key_h: 56
+  raw_binding_map:
+    '&m_ldsh': '<-'
+    '&m_rdsh': '->'
+    '&m_elmap': '%{'
+    '&m_insl': 'insl'
+    '&m_leq': '<='
+    '&m_req': '=>'
+    '&m_elpipe': '|>'
+    '&bootloader': 'Boot'
+    '&studio_unlock': 'Unlock'
+    '&sys_reset': 'Reset'
+    'MUTE': 'Mute'
+    'VOLUME DOWN': 'Vol-'
+    'VOLUME UP': 'Vol+'
+    'BRI UP': 'Bri+'
+    'BRI DEC': 'Bri-'
+    'AC DESKTOP SHOW ALL WINDOWS': 'Windows'
+    'AC DESKTOP SHOW ALL APPLICATIONS': 'Apps'
+    'PLAY PAUSE': 'Play'
+  zmk_keycode_map:
+    VOLUME UP: Vol+
+    VOLUME DOWN: Vol-
+    MUTE: Mute
+    PLAY PAUSE: Play
+    PREV: Prev
+    NEXT: Next
+    BRI UP: Bri+
+    BRI DEC: Bri-
+    AC DESKTOP SHOW ALL WINDOWS: Windows
+    AC DESKTOP SHOW ALL APPLICATIONS: Apps
+    C_VOLUME_UP: Vol+
+    C_VOLUME_DOWN: Vol-
+    C_MUTE: Mute
+    C_PLAY_PAUSE: Play
+    C_PREV: Prev
+    C_NEXT: Next
+    C_BRI_UP: Bri+
+    C_BRI_DEC: Bri-
+    C_AC_DESKTOP_SHOW_ALL_WINDOWS: Windows
+    C_AC_DESKTOP_SHOW_ALL_APPLICATIONS: Apps
