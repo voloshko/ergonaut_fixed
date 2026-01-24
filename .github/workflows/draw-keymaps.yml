@@ -1,4 +1,4 @@
-# Draw keymap diagrams using keymap-drawer ZMK user config workflow
+# Draw keymap diagrams with layout fix for ergonaut_one
 name: Draw ZMK keymaps
 on:
   workflow_dispatch:
@@ -11,13 +11,36 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    runs-on: ubuntu-latest
     permissions:
-      contents: write  # allow workflow to commit to the repo
-    with:
-      keymap_patterns: 'config/*.keymap'
-      config_path: keymap-drawer/config.yaml
-      output_folder: keymap-drawer
-      install_branch: main
-      amend_commit: true
-      draw_args: "ergonaut_one:'-k corneish_zen -l foostan_corne_6col_layout'"
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install keymap-drawer
+        run: pipx install keymap-drawer
+
+      - name: Parse and draw keymap
+        run: |
+          # Parse keymap with config
+          keymap -c keymap-drawer/config.yaml parse -z config/ergonaut_one.keymap > keymap-drawer/ergonaut_one.yaml.tmp
+
+          # Fix layout for corneish_zen (ergonaut_one is not in keymap-drawer database)
+          sed -i '1d' keymap-drawer/ergonaut_one.yaml.tmp
+          cat > keymap-drawer/ergonaut_one.yaml << 'EOF'
+          layout:
+            zmk_keyboard: corneish_zen
+            layout_name: foostan_corne_6col_layout
+          EOF
+          cat keymap-drawer/ergonaut_one.yaml.tmp >> keymap-drawer/ergonaut_one.yaml
+          rm keymap-drawer/ergonaut_one.yaml.tmp
+
+          # Draw SVG
+          keymap -c keymap-drawer/config.yaml draw keymap-drawer/ergonaut_one.yaml > keymap-drawer/ergonaut_one.svg
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "keymap-drawer render"
+          file_pattern: 'keymap-drawer/*.yaml keymap-drawer/*.svg'
