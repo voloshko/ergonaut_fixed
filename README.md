@@ -1,6 +1,6 @@
 # ZMK Config for Ergonaut One: Elixir + Vim + macOS
 
-Custom ZMK firmware configuration for Ergonaut One keyboard, optimized for Elixir development in Vim on macOS.
+ Custom ZMK firmware configuration for Ergonaut One keyboard, optimized for Elixir development in Vim on macOS.
 
 
 ## Design Philosophy
