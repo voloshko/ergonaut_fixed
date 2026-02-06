@@ -16,7 +16,7 @@ layers:
   - P
   - {t: '[', h: Gui}
   - {t: '`', h: Ctrl}
-  - A
+  - {t: A, h: LEFT META}
   - S
   - D
   - F
