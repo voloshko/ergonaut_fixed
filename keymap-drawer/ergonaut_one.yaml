@@ -17,15 +17,15 @@ layers:
   - {t: '[', h: Gui}
   - {t: '`', h: Ctrl}
   - {t: A, h: LEFT META}
-  - S
-  - D
-  - F
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT CONTROL}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: Ctrl}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RIGHT META}
   - {t: '''', h: Ctrl}
   - {t: '-', h: Alt}
   - Z
