@@ -81,20 +81,26 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| T+H | the | T+A | that | A+N | and |
-| H+V | have | R+F | for | O+N | not |
-| W+I | with | Y+U | you | T+I | this |
-| U+B | but | F+M | from | T+Y | they |
-| W+L | will | W+D | would | R+T | there |
-| E+T | their | W+A | what | A+B | about |
-| W+C | which | W+N | when | S+J | just |
-| K+N | know | K+L | like | I+N | into |
-| R+Y | your | D+C | could | T+O | other |
-| T+K | think | A+L | also | A+F | after |
-| C+B | because | S+H | should | T+G | through |
-| F+B | before | T+B | between | W+O | without |
-| S+M | something | R+A | already | P+L | people |
-| T+S | these | | | | |
+| T+H | the | A+N | and | T+A | that |
+| H+V | have | W+H | with | F+O | for |
+| N+T | not | Y+U | you | T+S | this |
+| B+U | but | F+M | from | T+Y | they |
+| W+L | will | W+D | would | W+A | what |
+| A+B | about | W+C | which | W+N | when |
+| J+S | just | K+N | know | L+C | like |
+| Y+R | your | C+D | could | S+H | should |
+| B+F | before | B+C | because | T+K | think |
+| A+L | also | A+F | after | T+M | time |
+| A+G | again | S+M | some | G+D | good |
+| M+R | more | N+V | never | E+V | even |
+| V+R | very | W+K | work | W+Y | way |
+| M+K | make | N+D | need | N+L | only |
+| B+N | been | H+L | while | C+N | can |
+| C+M | come | O+E | one | G+E | great |
+| M+G | might | F+N | found | U+D | under |
+| O+T | other | P+E | people | R+L | really |
+| H+R | her | H+S | his | A+E | are |
+| W+S | was | | | | |
 
 **Utility chords:**
 
