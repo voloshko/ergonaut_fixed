@@ -7,6 +7,8 @@
 #define RSE 2
 #define ADJ 3
 
+#include "combos.dtsi"
+
 &lt { quick-tap-ms = <200>; };
 
 &mt { quick-tap-ms = <200>; };

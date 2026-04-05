@@ -1,0 +1,156 @@
+// Chords (combos) for common English words and utility keys
+//
+// Key position reference (QWERTY) — Ergonaut One 42-key:
+//  0(])  1(Q)  2(W)  3(E)  4(R)  5(T)  |  6(Y)  7(U)  8(I)  9(O) 10(P) 11([)
+// 12(`) 13(A) 14(S) 15(D) 16(F) 17(G)  | 18(H) 19(J) 20(K) 21(L) 22(;) 23(')
+// 24(-) 25(Z) 26(X) 27(C) 28(V) 29(B)  | 30(N) 31(M) 32(,) 33(.) 34(/) 35(\)
+//                   36    37    38      | 39    40    41
+//
+// Press two keys simultaneously within 40ms to output a word + trailing space.
+// require-prior-idle-ms = 150 prevents misfires during fast typing.
+
+/ {
+    macros {
+        // === Tier 1: Top 20 most common English words ===
+        m_the: m_the { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>; };
+        m_and: m_and { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp A &kp N &kp D &kp SPACE>; };
+        m_that: m_that { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp A &kp T &kp SPACE>; };
+        m_have: m_have { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp H &kp A &kp V &kp E &kp SPACE>; };
+        m_for: m_for { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp O &kp R &kp SPACE>; };
+        m_not: m_not { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp N &kp O &kp T &kp SPACE>; };
+        m_with: m_with { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp I &kp T &kp H &kp SPACE>; };
+        m_you: m_you { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp Y &kp O &kp U &kp SPACE>; };
+        m_this: m_this { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp I &kp S &kp SPACE>; };
+        m_but: m_but { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp U &kp T &kp SPACE>; };
+        m_from: m_from { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp R &kp O &kp M &kp SPACE>; };
+        m_they: m_they { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp E &kp Y &kp SPACE>; };
+        m_will: m_will { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp I &kp L &kp L &kp SPACE>; };
+        m_would: m_would { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp O &kp U &kp L &kp D &kp SPACE>; };
+        m_there: m_there { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp E &kp R &kp E &kp SPACE>; };
+        m_their: m_their { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp E &kp I &kp R &kp SPACE>; };
+        m_what: m_what { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp H &kp A &kp T &kp SPACE>; };
+        m_about: m_about { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp A &kp B &kp O &kp U &kp T &kp SPACE>; };
+        m_which: m_which { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp H &kp I &kp C &kp H &kp SPACE>; };
+        m_when: m_when { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp H &kp E &kp N &kp SPACE>; };
+
+        // === Tier 2: High-value words ===
+        m_just: m_just { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp J &kp U &kp S &kp T &kp SPACE>; };
+        m_know: m_know { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp K &kp N &kp O &kp W &kp SPACE>; };
+        m_like: m_like { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp I &kp K &kp E &kp SPACE>; };
+        m_into: m_into { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp I &kp N &kp T &kp O &kp SPACE>; };
+        m_your: m_your { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp Y &kp O &kp U &kp R &kp SPACE>; };
+        m_could: m_could { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp C &kp O &kp U &kp L &kp D &kp SPACE>; };
+        m_other: m_other { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp O &kp T &kp H &kp E &kp R &kp SPACE>; };
+        m_think: m_think { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp I &kp N &kp K &kp SPACE>; };
+        m_also: m_also { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp A &kp L &kp S &kp O &kp SPACE>; };
+        m_after: m_after { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp A &kp F &kp T &kp E &kp R &kp SPACE>; };
+        m_because: m_because { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>; };
+
+        // === Tier 3: Long words (big keystroke savings) ===
+        m_should: m_should { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp H &kp O &kp U &kp L &kp D &kp SPACE>; };
+        m_through: m_through { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp R &kp O &kp U &kp G &kp H &kp SPACE>; };
+        m_before: m_before { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp F &kp O &kp R &kp E &kp SPACE>; };
+        m_between: m_between { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp T &kp W &kp E &kp E &kp N &kp SPACE>; };
+        m_without: m_without { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp I &kp T &kp H &kp O &kp U &kp T &kp SPACE>; };
+        m_something: m_something { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp SPACE>; };
+        m_already: m_already { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp A &kp L &kp R &kp E &kp A &kp D &kp Y &kp SPACE>; };
+        m_people: m_people { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp E &kp O &kp P &kp L &kp E &kp SPACE>; };
+        m_these: m_these { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp H &kp E &kp S &kp E &kp SPACE>; };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        // === Tier 1: Top 20 most common words ===
+        combo_the   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18>;  bindings = <&m_the>;   layers = <0>; };  // T+H
+        combo_and   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 30>; bindings = <&m_and>;   layers = <0>; };  // A+N
+        combo_that  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 13>;  bindings = <&m_that>;  layers = <0>; };  // T+A
+        combo_have  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 28>; bindings = <&m_have>;  layers = <0>; };  // H+V
+        combo_for   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 16>;  bindings = <&m_for>;   layers = <0>; };  // R+F
+        combo_not   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 30>;  bindings = <&m_not>;   layers = <0>; };  // O+N
+        combo_with  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 8>;   bindings = <&m_with>;  layers = <0>; };  // W+I
+        combo_you   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <6 7>;   bindings = <&m_you>;   layers = <0>; };  // Y+U
+        combo_this  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 8>;   bindings = <&m_this>;  layers = <0>; };  // T+I
+        combo_but   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 29>;  bindings = <&m_but>;   layers = <0>; };  // U+B
+        combo_from  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 31>; bindings = <&m_from>;  layers = <0>; };  // F+M
+        combo_they  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 6>;   bindings = <&m_they>;  layers = <0>; };  // T+Y
+        combo_will  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 21>;  bindings = <&m_will>;  layers = <0>; };  // W+L
+        combo_would { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 15>;  bindings = <&m_would>; layers = <0>; };  // W+D
+        combo_there { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 5>;   bindings = <&m_there>; layers = <0>; };  // R+T
+        combo_their { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 5>;   bindings = <&m_their>; layers = <0>; };  // E+T
+        combo_what  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 13>;  bindings = <&m_what>;  layers = <0>; };  // W+A
+        combo_about { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 29>; bindings = <&m_about>; layers = <0>; };  // A+B
+        combo_which { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 27>;  bindings = <&m_which>; layers = <0>; };  // W+C
+        combo_when  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 30>;  bindings = <&m_when>;  layers = <0>; };  // W+N
+
+        // === Tier 2: High-value words ===
+        combo_just  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 19>; bindings = <&m_just>;  layers = <0>; };  // S+J
+        combo_know  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <20 30>; bindings = <&m_know>;  layers = <0>; };  // K+N
+        combo_like  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <20 21>; bindings = <&m_like>;  layers = <0>; };  // K+L
+        combo_into  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 30>;  bindings = <&m_into>;  layers = <0>; };  // I+N
+        combo_your  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 6>;   bindings = <&m_your>;  layers = <0>; };  // R+Y
+        combo_could { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 27>; bindings = <&m_could>; layers = <0>; };  // D+C
+        combo_other { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 9>;   bindings = <&m_other>; layers = <0>; };  // T+O
+        combo_think { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 20>;  bindings = <&m_think>; layers = <0>; };  // T+K
+        combo_also  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 21>; bindings = <&m_also>;  layers = <0>; };  // A+L
+        combo_after { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 16>; bindings = <&m_after>; layers = <0>; };  // A+F
+        combo_because { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 29>; bindings = <&m_because>; layers = <0>; };  // C+B
+
+        // === Tier 3: Long words (big keystroke savings) ===
+        combo_should    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 18>; bindings = <&m_should>;    layers = <0>; };  // S+H
+        combo_through   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 17>;  bindings = <&m_through>;   layers = <0>; };  // T+G
+        combo_before    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 29>; bindings = <&m_before>;    layers = <0>; };  // F+B
+        combo_between   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 29>;  bindings = <&m_between>;   layers = <0>; };  // T+B
+        combo_without   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 9>;   bindings = <&m_without>;   layers = <0>; };  // W+O
+        combo_something { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 31>; bindings = <&m_something>; layers = <0>; };  // S+M
+        combo_already   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 13>;  bindings = <&m_already>;   layers = <0>; };  // R+A
+        combo_people    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 21>; bindings = <&m_people>;    layers = <0>; };  // P+L
+        combo_these     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 14>;  bindings = <&m_these>;     layers = <0>; };  // T+S
+
+        // === Utility combos (no prior-idle requirement for responsiveness) ===
+        combo_esc    { timeout-ms = <30>; key-positions = <19 20>; bindings = <&kp ESC>;    layers = <0>; };  // J+K
+        combo_lpar   { timeout-ms = <30>; key-positions = <7 8>;   bindings = <&kp LPAR>;   layers = <0>; };  // U+I
+        combo_rpar   { timeout-ms = <30>; key-positions = <8 9>;   bindings = <&kp RPAR>;   layers = <0>; };  // I+O
+        combo_caps   { timeout-ms = <30>; key-positions = <2 16>;  bindings = <&caps_word>; layers = <0>; };  // W+F
+    };
+};
