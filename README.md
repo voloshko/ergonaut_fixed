@@ -88,38 +88,38 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 | W+L | will | W+D | would | W+A | what |
 | A+B | about | W+C | which | W+N | when |
 | J+S | just | K+N | know | L+C | like |
-| Y+R | your | C+D | could | S+H | should |
+| Y+R | your | C+O | could | S+H | should |
 | B+F | before | B+C | because | T+K | think |
 | A+L | also | A+F | after | T+M | time |
 | A+G | again | S+M | some | G+D | good |
 | M+R | more | N+V | never | E+V | even |
-| V+R | very | W+K | work | W+Y | way |
+| V+Y | very | W+K | work | W+Y | way |
 | M+K | make | N+D | need | N+L | only |
 | B+N | been | H+L | while | C+N | can |
 | C+M | come | O+E | one | G+E | great |
 | M+G | might | F+N | found | U+D | under |
 | O+T | other | P+E | people | R+L | really |
 | H+R | her | H+S | his | A+E | are |
-| W+S | was | | | | |
+| A+S | was | | | | |
 
 **3-key word chords (91) — common English:**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
 | T+H+R | through | T+H+E | there | T+H+A | than |
-| T+H+I | their | T+H+O | those | T+H+G | thing |
-| T+H+U | though | T+R+E | three | T+G+R | together |
+| T+H+I | their | T+H+O | those | H+I+G | thing |
+| T+H+U | though | T+R+E | three | T+O+R | together |
 | A+N+T | another | W+H+R | where | W+H+T | whether |
-| B+T+N | between | S+M+T | something | A+R+D | already |
-| A+W+S | always | A+R+N | around | D+F+R | different |
-| M+P+R | important | S+T+L | still | E+V+R | every |
-| F+S+R | first | W+R+L | world | L+T+I | little |
-| R+G+T | right | B+N+G | being | S+M+L | small |
+| B+E+N | between | S+M+T | something | A+R+D | already |
+| A+L+W | always | A+R+N | around | D+I+R | different |
+| M+P+R | important | S+T+L | still | E+V+Y | every |
+| F+I+S | first | W+R+L | world | L+T+I | little |
+| R+I+G | right | B+I+N | being | S+M+L | small |
 | T+A+K | take | W+E+L | well | I+N+T | into |
 | H+E+R | here | S+I+N | since | S+T+R | story |
 | W+R+T | write | U+S+N | using | A+C+L | actually |
-| L+R+N | learn | P+N+T | point | L+O+G | long |
-| K+E+P | keep | S+A+M | same | E+C+H | each |
+| L+R+N | learn | P+N+T | point | O+N+G | long |
+| K+E+P | keep | S+A+M | same | E+A+H | each |
 | H+L+P | help | | | | |
 
 **3-key word chords — ML/AI:**
@@ -131,7 +131,7 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 | B+P+R | backprop | N+R+L | neural | D+R+P | dropout |
 | D+S+T | dataset | T+K+N | tokenize | L+T+N | latent |
 | S+F+M | softmax | R+S+D | residual | C+K+P | checkpoint |
-| L+G+T | logit | E+P+C | epoch | B+T+C | batch |
+| L+G+I | logit | E+P+O | epoch | B+A+C | batch |
 | M+D+L | model | L+N+G | language | P+R+M | parameter |
 | M+A+B | mamba | C+N+V | convolutional | | |
 
@@ -141,9 +141,9 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 |-------|------|-------|------|-------|------|
 | T+R+A | trait | A+W+T | await | I+M+L | impl |
 | R+S+L | Result< | O+T+N | Option< | E+N+M | enum |
-| M+T+C | match | R+E+T | return | D+R+V | derive |
+| M+T+C | match | R+E+T | return | D+R+I | derive |
 | C+L+S | closure | L+F+T | lifetime | B+R+W | borrow |
-| M+U+T | mut | | | | |
+| M+T+N | mut | | | | |
 
 **3-key word chords — Haskell:**
 
@@ -156,18 +156,18 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| F+N+C | function | C+L+D | Claude | A+T+P | Anthropic |
-| A+Z+R | Azure | D+C+K | duckdb | I+C+B | iceberg |
+| F+N+C | function | C+L+A | Claude | A+T+P | Anthropic |
+| A+U+R | Azure | D+U+K | duckdb | I+C+B | iceberg |
 
 **4-key word chords (10):**
 
 | Chord | Word | Chord | Word |
 |-------|------|-------|------|
-| T+R+N+F | transformer | K+W+N+T | quantization |
+| T+R+A+N | transformer | K+W+N+T | quantization |
 | I+M+P+L | implementation | S+T+R+C | struct |
 | A+S+N+C | async | H+S+K+L | haskell |
-| F+R+L+A | forall | S+K+N+L | Skinly |
-| B+R+D+F | Beiersdorf | A+R+C+H | architecture |
+| F+O+A+N | forall | S+K+N+L | Skinly |
+| B+E+I+R | Beiersdorf | A+R+C+H | architecture |
 
 **Utility chords:**
 
@@ -182,7 +182,7 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 | H+J | `[` |
 | J+L | `]` |
 | N+M | Enter |
-| H+N | Backspace |
+| H+M | Backspace |
 
 ## Key Features
 
