@@ -35,15 +35,15 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - '&td_comma'
+  - '&td_dot'
   - /
   - {t: \, h: Alt}
   - {t: ↹, h: NAV}
   - {t: ␣, h: Shift}
   - {t: ⏎, h: SYM}
   - {t: Esc, h: SYM}
-  - {t: ⌫, h: Shift}
+  - '&td_bspc'
   - {t: DELETE, h: NAV}
   SYM:
   - Gui
