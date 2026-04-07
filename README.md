@@ -20,9 +20,9 @@ This layout is designed around three core workflows:
 ## Layer Breakdown
 
 ### MAIN Layer
-Standard QWERTY with home row mods:
+Standard QWERTY with home row mods (tuned for low false positives):
 - **Outer columns**: Brackets and special chars with Gui hold-taps
-- **Home row**: Modifiers on hold (Ctrl, Alt)
+- **Home row**: Modifiers on hold (Ctrl, Alt, Shift, Meta) — 280ms hold threshold with 180ms idle guard
 - **Thumbs**: Layer access via hold-taps (SYM, NAV, Shift)
 
 ### SYM Layer - Elixir Operators
@@ -185,6 +185,23 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 | H+N | Backspace |
 
 ## Key Features
+
+### Home Row Modifier Tuning
+
+Home row mods use a hold-tap behavior with custom timing to prevent accidental modifier activation during fast typing:
+
+| Setting | Value | Purpose |
+|---------|-------|---------|
+| `tapping-term-ms` | 280ms | Must hold this long before registering as modifier |
+| `require-prior-idle-ms` | 180ms | If any key was pressed in the last 180ms, always register as tap |
+| `quick-tap-ms` | 200ms | Retap within this window always produces a tap |
+| `flavor` | `balanced` | Context-aware hold/tap decision algorithm |
+
+**Why this matters:** The idle guard (`require-prior-idle-ms`) is the key setting — it prevents accidental Meta+Space language switches during fast typing. When you're typing quickly, home row keys always produce letters. You must intentionally pause and hold to get a modifier.
+
+To adjust sensitivity, edit the `&mt` block in [`config/ergonaut_one.keymap`](config/ergonaut_one.keymap):
+- **Too sensitive?** Increase `tapping-term-ms` (try 300–350ms) or `require-prior-idle-ms` (try 200–250ms)
+- **Too slow to activate?** Decrease `tapping-term-ms` (try 230–260ms)
 
 ### Elixir Macros
 All Elixir operators are pre-spaced for faster typing:

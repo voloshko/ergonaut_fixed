@@ -11,7 +11,12 @@
 
 &lt { quick-tap-ms = <200>; };
 
-&mt { quick-tap-ms = <200>; };
+&mt {
+    tapping-term-ms = <280>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <180>;
+    flavor = "balanced";
+};
 
 / {
     conditional_layers {
