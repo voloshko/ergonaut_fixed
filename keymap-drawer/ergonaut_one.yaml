@@ -187,22 +187,22 @@ combos:
 - p: [18, 28]
   k: '&m_have'
   l: [MAIN]
-- p: [4, 16]
+- p: [2, 18]
+  k: '&m_with'
+  l: [MAIN]
+- p: [16, 9]
   k: '&m_for'
   l: [MAIN]
-- p: [9, 30]
+- p: [30, 5]
   k: '&m_not'
-  l: [MAIN]
-- p: [2, 8]
-  k: '&m_with'
   l: [MAIN]
 - p: [6, 7]
   k: '&m_you'
   l: [MAIN]
-- p: [5, 8]
+- p: [5, 14]
   k: '&m_this'
   l: [MAIN]
-- p: [7, 29]
+- p: [29, 7]
   k: '&m_but'
   l: [MAIN]
 - p: [16, 31]
@@ -217,12 +217,6 @@ combos:
 - p: [2, 15]
   k: '&m_would'
   l: [MAIN]
-- p: [4, 5]
-  k: '&m_there'
-  l: [MAIN]
-- p: [3, 5]
-  k: '&m_their'
-  l: [MAIN]
 - p: [2, 13]
   k: '&m_what'
   l: [MAIN]
@@ -235,26 +229,29 @@ combos:
 - p: [2, 30]
   k: '&m_when'
   l: [MAIN]
-- p: [14, 19]
+- p: [19, 14]
   k: '&m_just'
   l: [MAIN]
 - p: [20, 30]
   k: '&m_know'
   l: [MAIN]
-- p: [20, 21]
+- p: [21, 27]
   k: '&m_like'
   l: [MAIN]
-- p: [8, 30]
-  k: '&m_into'
-  l: [MAIN]
-- p: [4, 6]
+- p: [6, 4]
   k: '&m_your'
   l: [MAIN]
-- p: [15, 27]
+- p: [27, 15]
   k: '&m_could'
   l: [MAIN]
-- p: [5, 9]
-  k: '&m_other'
+- p: [14, 18]
+  k: '&m_should'
+  l: [MAIN]
+- p: [29, 16]
+  k: '&m_before'
+  l: [MAIN]
+- p: [29, 27]
+  k: '&m_because'
   l: [MAIN]
 - p: [5, 20]
   k: '&m_think'
@@ -265,40 +262,409 @@ combos:
 - p: [13, 16]
   k: '&m_after'
   l: [MAIN]
-- p: [27, 29]
-  k: '&m_because'
+- p: [5, 31]
+  k: '&m_time'
   l: [MAIN]
-- p: [14, 18]
-  k: '&m_should'
-  l: [MAIN]
-- p: [5, 17]
-  k: '&m_through'
-  l: [MAIN]
-- p: [16, 29]
-  k: '&m_before'
-  l: [MAIN]
-- p: [5, 29]
-  k: '&m_between'
-  l: [MAIN]
-- p: [2, 9]
-  k: '&m_without'
+- p: [13, 17]
+  k: '&m_again'
   l: [MAIN]
 - p: [14, 31]
-  k: '&m_something'
+  k: '&m_some'
   l: [MAIN]
-- p: [4, 13]
-  k: '&m_already'
+- p: [17, 15]
+  k: '&m_good'
   l: [MAIN]
-- p: [10, 21]
+- p: [31, 4]
+  k: '&m_more'
+  l: [MAIN]
+- p: [30, 28]
+  k: '&m_never'
+  l: [MAIN]
+- p: [3, 28]
+  k: '&m_even'
+  l: [MAIN]
+- p: [28, 4]
+  k: '&m_very'
+  l: [MAIN]
+- p: [2, 20]
+  k: '&m_work'
+  l: [MAIN]
+- p: [2, 6]
+  k: '&m_way'
+  l: [MAIN]
+- p: [31, 20]
+  k: '&m_make'
+  l: [MAIN]
+- p: [30, 15]
+  k: '&m_need'
+  l: [MAIN]
+- p: [30, 21]
+  k: '&m_only'
+  l: [MAIN]
+- p: [29, 30]
+  k: '&m_been'
+  l: [MAIN]
+- p: [18, 21]
+  k: '&m_while'
+  l: [MAIN]
+- p: [27, 30]
+  k: '&m_can'
+  l: [MAIN]
+- p: [27, 31]
+  k: '&m_come'
+  l: [MAIN]
+- p: [9, 3]
+  k: '&m_one'
+  l: [MAIN]
+- p: [17, 3]
+  k: '&m_great'
+  l: [MAIN]
+- p: [31, 17]
+  k: '&m_might'
+  l: [MAIN]
+- p: [16, 30]
+  k: '&m_found'
+  l: [MAIN]
+- p: [7, 15]
+  k: '&m_under'
+  l: [MAIN]
+- p: [9, 5]
+  k: '&m_other'
+  l: [MAIN]
+- p: [10, 3]
   k: '&m_people'
   l: [MAIN]
-- p: [5, 14]
-  k: '&m_these'
+- p: [4, 21]
+  k: '&m_really'
+  l: [MAIN]
+- p: [18, 4]
+  k: '&m_her'
+  l: [MAIN]
+- p: [18, 14]
+  k: '&m_his'
+  l: [MAIN]
+- p: [13, 3]
+  k: '&m_are'
+  l: [MAIN]
+- p: [2, 14]
+  k: '&m_was'
+  l: [MAIN]
+- p: [5, 18, 4]
+  k: '&m_through'
+  l: [MAIN]
+- p: [5, 18, 3]
+  k: '&m_there'
+  l: [MAIN]
+- p: [5, 18, 13]
+  k: '&m_than'
+  l: [MAIN]
+- p: [5, 18, 8]
+  k: '&m_their'
+  l: [MAIN]
+- p: [5, 18, 9]
+  k: '&m_those'
+  l: [MAIN]
+- p: [5, 18, 17]
+  k: '&m_thing'
+  l: [MAIN]
+- p: [5, 18, 7]
+  k: '&m_though'
+  l: [MAIN]
+- p: [5, 4, 3]
+  k: '&m_three'
+  l: [MAIN]
+- p: [5, 17, 4]
+  k: '&m_together'
+  l: [MAIN]
+- p: [13, 30, 5]
+  k: '&m_another'
+  l: [MAIN]
+- p: [2, 18, 4]
+  k: '&m_where'
+  l: [MAIN]
+- p: [2, 18, 5]
+  k: '&m_whether'
+  l: [MAIN]
+- p: [29, 5, 30]
+  k: '&m_between'
+  l: [MAIN]
+- p: [14, 31, 5]
+  k: '&m_something'
+  l: [MAIN]
+- p: [13, 4, 15]
+  k: '&m_already'
+  l: [MAIN]
+- p: [13, 2, 14]
+  k: '&m_always'
+  l: [MAIN]
+- p: [13, 4, 30]
+  k: '&m_around'
+  l: [MAIN]
+- p: [15, 16, 4]
+  k: '&m_different'
+  l: [MAIN]
+- p: [31, 10, 4]
+  k: '&m_important'
+  l: [MAIN]
+- p: [14, 5, 21]
+  k: '&m_still'
+  l: [MAIN]
+- p: [3, 28, 4]
+  k: '&m_every'
+  l: [MAIN]
+- p: [16, 14, 4]
+  k: '&m_first'
+  l: [MAIN]
+- p: [2, 4, 21]
+  k: '&m_world'
+  l: [MAIN]
+- p: [21, 5, 8]
+  k: '&m_little'
+  l: [MAIN]
+- p: [4, 17, 5]
+  k: '&m_right'
+  l: [MAIN]
+- p: [29, 30, 17]
+  k: '&m_being'
+  l: [MAIN]
+- p: [14, 31, 21]
+  k: '&m_small'
+  l: [MAIN]
+- p: [5, 13, 20]
+  k: '&m_take'
+  l: [MAIN]
+- p: [2, 3, 21]
+  k: '&m_well'
+  l: [MAIN]
+- p: [8, 30, 5]
+  k: '&m_into'
+  l: [MAIN]
+- p: [18, 3, 4]
+  k: '&m_here'
+  l: [MAIN]
+- p: [14, 8, 30]
+  k: '&m_since'
+  l: [MAIN]
+- p: [14, 5, 4]
+  k: '&m_story'
+  l: [MAIN]
+- p: [2, 4, 5]
+  k: '&m_write'
+  l: [MAIN]
+- p: [7, 14, 30]
+  k: '&m_using'
+  l: [MAIN]
+- p: [13, 27, 21]
+  k: '&m_actually'
+  l: [MAIN]
+- p: [21, 4, 30]
+  k: '&m_learn'
+  l: [MAIN]
+- p: [10, 30, 5]
+  k: '&m_point'
+  l: [MAIN]
+- p: [21, 9, 17]
+  k: '&m_long'
+  l: [MAIN]
+- p: [20, 3, 10]
+  k: '&m_keep'
+  l: [MAIN]
+- p: [14, 13, 31]
+  k: '&m_same'
+  l: [MAIN]
+- p: [3, 27, 18]
+  k: '&m_each'
+  l: [MAIN]
+- p: [18, 21, 10]
+  k: '&m_help'
+  l: [MAIN]
+- p: [15, 16, 30]
+  k: '&m_diffusion'
+  l: [MAIN]
+- p: [3, 31, 29]
+  k: '&m_embedding'
+  l: [MAIN]
+- p: [17, 4, 15]
+  k: '&m_gradient'
+  l: [MAIN]
+- p: [8, 30, 16]
+  k: '&m_inference'
+  l: [MAIN]
+- p: [5, 4, 30]
+  k: '&m_training'
+  l: [MAIN]
+- p: [13, 27, 5]
+  k: '&m_activation'
+  l: [MAIN]
+- p: [29, 10, 4]
+  k: '&m_backprop'
+  l: [MAIN]
+- p: [30, 4, 21]
+  k: '&m_neural'
+  l: [MAIN]
+- p: [15, 4, 10]
+  k: '&m_dropout'
+  l: [MAIN]
+- p: [15, 14, 5]
+  k: '&m_dataset'
+  l: [MAIN]
+- p: [5, 20, 30]
+  k: '&m_tokenize'
+  l: [MAIN]
+- p: [21, 5, 30]
+  k: '&m_latent'
+  l: [MAIN]
+- p: [14, 16, 31]
+  k: '&m_softmax'
+  l: [MAIN]
+- p: [4, 14, 15]
+  k: '&m_residual'
+  l: [MAIN]
+- p: [27, 20, 10]
+  k: '&m_checkpoint'
+  l: [MAIN]
+- p: [21, 17, 5]
+  k: '&m_logit'
+  l: [MAIN]
+- p: [3, 10, 27]
+  k: '&m_epoch'
+  l: [MAIN]
+- p: [29, 5, 27]
+  k: '&m_batch'
+  l: [MAIN]
+- p: [31, 15, 21]
+  k: '&m_model'
+  l: [MAIN]
+- p: [21, 30, 17]
+  k: '&m_language'
+  l: [MAIN]
+- p: [10, 4, 31]
+  k: '&m_parameter'
+  l: [MAIN]
+- p: [31, 13, 29]
+  k: '&m_mamba'
+  l: [MAIN]
+- p: [27, 30, 28]
+  k: '&m_convolutional'
+  l: [MAIN]
+- p: [5, 4, 13]
+  k: '&m_trait'
+  l: [MAIN]
+- p: [13, 2, 5]
+  k: '&m_await'
+  l: [MAIN]
+- p: [8, 31, 21]
+  k: '&m_impl'
+  l: [MAIN]
+- p: [4, 14, 21]
+  k: '&m_result'
+  l: [MAIN]
+- p: [9, 5, 30]
+  k: '&m_option'
+  l: [MAIN]
+- p: [3, 30, 31]
+  k: '&m_enum'
+  l: [MAIN]
+- p: [31, 5, 27]
+  k: '&m_match'
+  l: [MAIN]
+- p: [4, 3, 5]
+  k: '&m_return'
+  l: [MAIN]
+- p: [15, 4, 28]
+  k: '&m_derive'
+  l: [MAIN]
+- p: [27, 21, 14]
+  k: '&m_closure'
+  l: [MAIN]
+- p: [21, 16, 5]
+  k: '&m_lifetime'
+  l: [MAIN]
+- p: [29, 4, 2]
+  k: '&m_borrow'
+  l: [MAIN]
+- p: [31, 7, 5]
+  k: '&m_mut'
+  l: [MAIN]
+- p: [31, 30, 15]
+  k: '&m_monad'
+  l: [MAIN]
+- p: [16, 27, 5]
+  k: '&m_functor'
+  l: [MAIN]
+- p: [31, 13, 6]
+  k: '&m_maybe'
+  l: [MAIN]
+- p: [31, 30, 8]
+  k: '&m_monoid'
+  l: [MAIN]
+- p: [21, 31, 29]
+  k: '&m_lambda'
+  l: [MAIN]
+- p: [5, 10, 27]
+  k: '&m_typeclass'
+  l: [MAIN]
+- p: [16, 30, 27]
+  k: '&m_function'
+  l: [MAIN]
+- p: [27, 21, 15]
+  k: '&m_claude'
+  l: [MAIN]
+- p: [13, 5, 10]
+  k: '&m_anthropic'
+  l: [MAIN]
+- p: [13, 25, 4]
+  k: '&m_azure'
+  l: [MAIN]
+- p: [15, 27, 20]
+  k: '&m_duckdb'
+  l: [MAIN]
+- p: [8, 27, 29]
+  k: '&m_iceberg'
+  l: [MAIN]
+- p: [5, 4, 30, 16]
+  k: '&m_transformer'
+  l: [MAIN]
+- p: [20, 2, 30, 5]
+  k: '&m_quantization'
+  l: [MAIN]
+- p: [8, 31, 10, 21]
+  k: '&m_implementation'
+  l: [MAIN]
+- p: [14, 5, 4, 27]
+  k: '&m_struct'
+  l: [MAIN]
+- p: [13, 14, 30, 27]
+  k: '&m_async'
+  l: [MAIN]
+- p: [18, 14, 20, 21]
+  k: '&m_haskell'
+  l: [MAIN]
+- p: [16, 4, 21, 13]
+  k: '&m_forall'
+  l: [MAIN]
+- p: [14, 20, 30, 21]
+  k: '&m_skinly'
+  l: [MAIN]
+- p: [29, 4, 15, 16]
+  k: '&m_beiersdorf'
+  l: [MAIN]
+- p: [13, 4, 27, 18]
+  k: '&m_architecture'
   l: [MAIN]
 - p: [19, 20]
   k: Esc
   l: [MAIN]
   draw_separate: true
+- p: [15, 16]
+  k: ↹
+  l: [MAIN]
+- p: [20, 21]
+  k: ↹
+  l: [MAIN]
+- p: [2, 16]
+  k: Caps Word
+  l: [MAIN]
 - p: [7, 8]
   k: (
   l: [MAIN]
@@ -307,6 +673,18 @@ combos:
   k: )
   l: [MAIN]
   draw_separate: true
-- p: [2, 16]
-  k: Caps Word
+- p: [18, 19]
+  k: '['
+  l: [MAIN]
+  draw_separate: true
+- p: [19, 21]
+  k: ']'
+  l: [MAIN]
+  draw_separate: true
+- p: [30, 31]
+  k: ⏎
+  l: [MAIN]
+  draw_separate: true
+- p: [18, 30]
+  k: ⌫
   l: [MAIN]
