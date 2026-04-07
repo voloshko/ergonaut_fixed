@@ -77,7 +77,7 @@ Press two or more keys simultaneously (within 40ms) to output an entire word wit
 
 Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-prior-idle-ms` (misfire guard) to taste.
 
-**2-key word chords (58):**
+**2-key word chords (158):**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
@@ -101,6 +101,45 @@ Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-p
 | O+T | other | P+E | people | R+L | really |
 | H+R | her | H+S | his | A+E | are |
 | A+S | was | | | | |
+
+**2-key word chords (100 new):**
+
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| A+I | said | O+K | look | W+T | want |
+| I+E | give | I+N | find | T+E | tell |
+| S+E | seem | E+L | feel | A+V | leave |
+| C+A | call | A+R | start | S+O | show |
+| E+R | hear | P+A | play | M+E | move |
+| B+E | believe | O+D | hold | E+N | begin |
+| T+L | talk | T+R | turn | U+T | must |
+| U+C | much | M+A | many | L+S | less |
+| N+R | number | P+R | part | P+L | place |
+| O+N | down | E+F | left | R+O | problem |
+| A+D | hand | C+S | case | E+Y | early |
+| H+E | change | I+D | kind | E+X | next |
+| B+O | both | O+A | social | O+I | doing |
+| G+I | going | N+M | name | S+I | possible |
+| G+R | general | H+O | school | H+I | high |
+| U+E | business | I+U | issue | S+D | side |
+| P+I | public | A+K | market | S+N | sense |
+| P+O | program | U+O | question | G+O | government |
+| O+M | company | W+E | week | I+L | family |
+| S+R | service | R+I | friend | R+C | price |
+| P+T | report | C+I | decision | P+N | parent |
+| I+T | situation | D+L | develop | S+Y | system |
+| R+U | product | S+U | student | P+S | process |
+| T+D | method | A+H | research | W+R | water |
+| T+C | article | U+P | support | V+I | evidence |
+| A+Y | activity | A+U | nature | O+Y | theory |
+| I+Y | history | U+L | quality | C+Y | security |
+| M+Y | economy | D+R | industry | M+I | media |
+| P+C | practice | U+N | education | N+G | management |
+| L+V | level | H+P | relationship | M+L | material |
+| B+R | behavior | I+W | view | F+T | effect |
+| L+Y | policy | F+I | field | D+H | daughter |
+| C+H | teacher | P+G | page | F+C | force |
+| U+H | truth |
 
 **3-key word chords (91) — common English:**
 

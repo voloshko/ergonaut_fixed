@@ -354,12 +354,174 @@
             bindings = <&kp LS(B) &kp E &kp I &kp E &kp R &kp S &kp D &kp O &kp R &kp F &kp SPACE>; };
         m_architecture: m_architecture { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
             bindings = <&kp A &kp R &kp C &kp H &kp I &kp T &kp E &kp C &kp T &kp U &kp R &kp E &kp SPACE>; };
+
+        m_said: m_said { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp A &kp I &kp D &kp SPACE>; };
+        m_look: m_look { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp O &kp O &kp K &kp SPACE>; };
+        m_want: m_want { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp A &kp N &kp T &kp SPACE>; };
+        m_give: m_give { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp G &kp I &kp V &kp E &kp SPACE>; };
+        m_find: m_find { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp I &kp N &kp D &kp SPACE>; };
+        m_tell: m_tell { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp E &kp L &kp L &kp SPACE>; };
+        m_seem: m_seem { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp E &kp E &kp M &kp SPACE>; };
+        m_feel: m_feel { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp E &kp E &kp L &kp SPACE>; };
+        m_leave: m_leave { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp E &kp A &kp V &kp E &kp SPACE>; };
+        m_call: m_call { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp C &kp A &kp L &kp L &kp SPACE>; };
+        m_start: m_start { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp T &kp A &kp R &kp T &kp SPACE>; };
+        m_show: m_show { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp H &kp O &kp W &kp SPACE>; };
+        m_hear: m_hear { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp H &kp E &kp A &kp R &kp SPACE>; };
+        m_play: m_play { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp L &kp A &kp Y &kp SPACE>; };
+        m_move: m_move { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp O &kp V &kp E &kp SPACE>; };
+        m_believe: m_believe { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp L &kp I &kp E &kp V &kp E &kp SPACE>; };
+        m_hold: m_hold { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp H &kp O &kp L &kp D &kp SPACE>; };
+        m_begin: m_begin { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp G &kp I &kp N &kp SPACE>; };
+        m_talk: m_talk { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp A &kp L &kp K &kp SPACE>; };
+        m_turn: m_turn { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp U &kp R &kp N &kp SPACE>; };
+        m_must: m_must { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp U &kp S &kp T &kp SPACE>; };
+        m_much: m_much { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp U &kp C &kp H &kp SPACE>; };
+        m_many: m_many { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp A &kp N &kp Y &kp SPACE>; };
+        m_less: m_less { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp E &kp S &kp S &kp SPACE>; };
+        m_number: m_number { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp N &kp U &kp M &kp B &kp E &kp R &kp SPACE>; };
+        m_part: m_part { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp A &kp R &kp T &kp SPACE>; };
+        m_place: m_place { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp L &kp A &kp C &kp E &kp SPACE>; };
+        m_down: m_down { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp D &kp O &kp W &kp N &kp SPACE>; };
+        m_left: m_left { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp E &kp F &kp T &kp SPACE>; };
+        m_problem: m_problem { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp R &kp O &kp B &kp L &kp E &kp M &kp SPACE>; };
+        m_hand: m_hand { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp H &kp A &kp N &kp D &kp SPACE>; };
+        m_case: m_case { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp C &kp A &kp S &kp E &kp SPACE>; };
+        m_early: m_early { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp E &kp A &kp R &kp L &kp Y &kp SPACE>; };
+        m_change: m_change { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp C &kp H &kp A &kp N &kp G &kp E &kp SPACE>; };
+        m_kind: m_kind { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp K &kp I &kp N &kp D &kp SPACE>; };
+        m_next: m_next { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp N &kp E &kp X &kp T &kp SPACE>; };
+        m_both: m_both { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp O &kp T &kp H &kp SPACE>; };
+        m_social: m_social { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp O &kp C &kp I &kp A &kp L &kp SPACE>; };
+        m_doing: m_doing { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp D &kp O &kp I &kp N &kp G &kp SPACE>; };
+        m_going: m_going { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp G &kp O &kp I &kp N &kp G &kp SPACE>; };
+        m_possible: m_possible { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp O &kp S &kp S &kp I &kp B &kp L &kp E &kp SPACE>; };
+        m_general: m_general { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp G &kp E &kp N &kp E &kp R &kp A &kp L &kp SPACE>; };
+        m_school: m_school { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp C &kp H &kp O &kp O &kp L &kp SPACE>; };
+        m_high: m_high { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp H &kp I &kp G &kp H &kp SPACE>; };
+        m_business: m_business { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp U &kp S &kp I &kp N &kp E &kp S &kp S &kp SPACE>; };
+        m_issue: m_issue { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp I &kp S &kp S &kp U &kp E &kp SPACE>; };
+        m_side: m_side { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp I &kp D &kp E &kp SPACE>; };
+        m_public: m_public { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp U &kp B &kp L &kp I &kp C &kp SPACE>; };
+        m_market: m_market { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp A &kp R &kp K &kp E &kp T &kp SPACE>; };
+        m_sense: m_sense { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp E &kp N &kp S &kp E &kp SPACE>; };
+        m_program: m_program { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp R &kp O &kp G &kp R &kp A &kp M &kp SPACE>; };
+        m_question: m_question { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp Q &kp U &kp E &kp S &kp T &kp I &kp O &kp N &kp SPACE>; };
+        m_government: m_government { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp G &kp O &kp V &kp E &kp R &kp N &kp M &kp E &kp N &kp T &kp SPACE>; };
+        m_company: m_company { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp C &kp O &kp M &kp P &kp A &kp N &kp Y &kp SPACE>; };
+        m_week: m_week { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp W &kp E &kp E &kp K &kp SPACE>; };
+        m_family: m_family { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp A &kp M &kp I &kp L &kp Y &kp SPACE>; };
+        m_service: m_service { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp S &kp E &kp R &kp V &kp I &kp C &kp E &kp SPACE>; };
+        m_friend: m_friend { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp R &kp I &kp E &kp N &kp D &kp SPACE>; };
+        m_price: m_price { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp R &kp I &kp C &kp E &kp SPACE>; };
+        m_report: m_report { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp R &kp E &kp P &kp O &kp R &kp T &kp SPACE>; };
+        m_economy: m_economy { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp E &kp C &kp O &kp N &kp O &kp M &kp Y &kp SPACE>; };
+        m_industry: m_industry { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp I &kp N &kp D &kp U &kp S &kp T &kp R &kp Y &kp SPACE>; };
+        m_media: m_media { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp E &kp D &kp I &kp A &kp SPACE>; };
+        m_practice: m_practice { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp R &kp A &kp C &kp T &kp I &kp C &kp E &kp SPACE>; };
+        m_education: m_education { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp E &kp D &kp U &kp C &kp A &kp T &kp I &kp O &kp N &kp SPACE>; };
+        m_management: m_management { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp A &kp N &kp A &kp G &kp E &kp M &kp E &kp N &kp T &kp SPACE>; };
+        m_level: m_level { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp L &kp E &kp V &kp E &kp L &kp SPACE>; };
+        m_relationship: m_relationship { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp R &kp E &kp L &kp A &kp T &kp I &kp O &kp N &kp S &kp H &kp I &kp P &kp SPACE>; };
+        m_material: m_material { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp M &kp A &kp T &kp E &kp R &kp I &kp A &kp L &kp SPACE>; };
+        m_behavior: m_behavior { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp B &kp E &kp H &kp A &kp V &kp I &kp O &kp R &kp SPACE>; };
+        m_view: m_view { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp V &kp I &kp E &kp W &kp SPACE>; };
+        m_effect: m_effect { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp E &kp F &kp F &kp E &kp C &kp T &kp SPACE>; };
+        m_policy: m_policy { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp O &kp L &kp I &kp C &kp Y &kp SPACE>; };
+        m_field: m_field { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp I &kp E &kp L &kp D &kp SPACE>; };
+        m_daughter: m_daughter { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp D &kp A &kp U &kp G &kp H &kp T &kp E &kp R &kp SPACE>; };
+        m_teacher: m_teacher { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp E &kp A &kp C &kp H &kp E &kp R &kp SPACE>; };
+        m_page: m_page { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp P &kp A &kp G &kp E &kp SPACE>; };
+        m_force: m_force { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp F &kp O &kp R &kp C &kp E &kp SPACE>; };
+        m_truth: m_truth { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp T &kp R &kp U &kp T &kp H &kp SPACE>; };
+        m_value: m_value { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp V &kp A &kp L &kp U &kp E &kp SPACE>; };
+        // === 2-key word macros (100 new) ===
     };
 
     combos {
         compatible = "zmk,combos";
 
-        // === 2-key word combos (58) ===
+        // === 2-key word combos (158) ===
         combo_the     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18>;  bindings = <&m_the>;     layers = <0>; };  // T+H
         combo_and     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 30>; bindings = <&m_and>;     layers = <0>; };  // A+N
         combo_that    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 13>;  bindings = <&m_that>;    layers = <0>; };  // T+A
@@ -419,7 +581,109 @@
         combo_are     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 3>;  bindings = <&m_are>;     layers = <0>; };  // A+E
         combo_was     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 14>;  bindings = <&m_was>;     layers = <0>; };  // A+S
 
+        // === 2-key word combos (100 new) ===
+
         // === 3-key word combos — Common English (43) ===
+        combo_said         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 8>; bindings = <&m_said>; layers = <0>; };  // A+I
+        combo_look         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 20>; bindings = <&m_look>; layers = <0>; };  // O+K
+        combo_want         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 5>; bindings = <&m_want>; layers = <0>; };  // W+T
+        combo_give         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 3>; bindings = <&m_give>; layers = <0>; };  // I+E
+        combo_find         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 30>; bindings = <&m_find>; layers = <0>; };  // I+N
+        combo_tell         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 3>; bindings = <&m_tell>; layers = <0>; };  // T+E
+        combo_seem         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 3>; bindings = <&m_seem>; layers = <0>; };  // S+E
+        combo_feel         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 21>; bindings = <&m_feel>; layers = <0>; };  // E+L
+        combo_leave        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 28>; bindings = <&m_leave>; layers = <0>; };  // A+V
+        combo_call         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 13>; bindings = <&m_call>; layers = <0>; };  // C+A
+        combo_start        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 4>; bindings = <&m_start>; layers = <0>; };  // A+R
+        combo_show         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 9>; bindings = <&m_show>; layers = <0>; };  // S+O
+        combo_hear         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 4>; bindings = <&m_hear>; layers = <0>; };  // E+R
+        combo_play         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 13>; bindings = <&m_play>; layers = <0>; };  // P+A
+        combo_move         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 3>; bindings = <&m_move>; layers = <0>; };  // M+E
+        combo_believe      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 3>; bindings = <&m_believe>; layers = <0>; };  // B+E
+        combo_hold         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 15>; bindings = <&m_hold>; layers = <0>; };  // O+D
+        combo_begin        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 30>; bindings = <&m_begin>; layers = <0>; };  // E+N
+        combo_talk         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 21>; bindings = <&m_talk>; layers = <0>; };  // T+L
+        combo_turn         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4>; bindings = <&m_turn>; layers = <0>; };  // T+R
+        combo_must         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 5>; bindings = <&m_must>; layers = <0>; };  // U+T
+        combo_much         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 27>; bindings = <&m_much>; layers = <0>; };  // U+C
+        combo_many         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 13>; bindings = <&m_many>; layers = <0>; };  // M+A
+        combo_less         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 14>; bindings = <&m_less>; layers = <0>; };  // L+S
+        combo_number       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 4>; bindings = <&m_number>; layers = <0>; };  // N+R
+        combo_part         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 4>; bindings = <&m_part>; layers = <0>; };  // P+R
+        combo_place        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 21>; bindings = <&m_place>; layers = <0>; };  // P+L
+        combo_down         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 30>; bindings = <&m_down>; layers = <0>; };  // O+N
+        combo_left         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 16>; bindings = <&m_left>; layers = <0>; };  // E+F
+        combo_problem      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 9>; bindings = <&m_problem>; layers = <0>; };  // R+O
+        combo_hand         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 15>; bindings = <&m_hand>; layers = <0>; };  // A+D
+        combo_case         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 14>; bindings = <&m_case>; layers = <0>; };  // C+S
+        combo_early        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 6>; bindings = <&m_early>; layers = <0>; };  // E+Y
+        combo_change       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 3>; bindings = <&m_change>; layers = <0>; };  // H+E
+        combo_kind         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 15>; bindings = <&m_kind>; layers = <0>; };  // I+D
+        combo_next         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 26>; bindings = <&m_next>; layers = <0>; };  // E+X
+        combo_both         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 9>; bindings = <&m_both>; layers = <0>; };  // B+O
+        combo_social       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 13>; bindings = <&m_social>; layers = <0>; };  // O+A
+        combo_doing        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 8>; bindings = <&m_doing>; layers = <0>; };  // O+I
+        combo_going        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 8>; bindings = <&m_going>; layers = <0>; };  // G+I
+        combo_name         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 31>; bindings = <&m_name>; layers = <0>; };  // N+M
+        combo_possible     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 8>; bindings = <&m_possible>; layers = <0>; };  // S+I
+        combo_general      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 4>; bindings = <&m_general>; layers = <0>; };  // G+R
+        combo_school       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 9>; bindings = <&m_school>; layers = <0>; };  // H+O
+        combo_high         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 8>; bindings = <&m_high>; layers = <0>; };  // H+I
+        combo_business     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 3>; bindings = <&m_business>; layers = <0>; };  // U+E
+        combo_issue        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 7>; bindings = <&m_issue>; layers = <0>; };  // I+U
+        combo_side         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 15>; bindings = <&m_side>; layers = <0>; };  // S+D
+        combo_public       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 8>; bindings = <&m_public>; layers = <0>; };  // P+I
+        combo_market       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 20>; bindings = <&m_market>; layers = <0>; };  // A+K
+        combo_program      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 9>; bindings = <&m_program>; layers = <0>; };  // P+O
+        combo_question     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 9>; bindings = <&m_question>; layers = <0>; };  // U+O
+        combo_government   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 9>; bindings = <&m_government>; layers = <0>; };  // G+O
+        combo_company      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 31>; bindings = <&m_company>; layers = <0>; };  // O+M
+        combo_week         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 3>; bindings = <&m_week>; layers = <0>; };  // W+E
+        combo_family       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 21>; bindings = <&m_family>; layers = <0>; };  // I+L
+        combo_service      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 4>; bindings = <&m_service>; layers = <0>; };  // S+R
+        combo_friend       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 8>; bindings = <&m_friend>; layers = <0>; };  // R+I
+        combo_price        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 27>; bindings = <&m_price>; layers = <0>; };  // R+C
+        combo_report       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 5>; bindings = <&m_report>; layers = <0>; };  // P+T
+        combo_decision     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 8>; bindings = <&m_decision>; layers = <0>; };  // C+I
+        combo_parent       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 30>; bindings = <&m_parent>; layers = <0>; };  // P+N
+        combo_situation    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 5>; bindings = <&m_situation>; layers = <0>; };  // I+T
+        combo_develop      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 21>; bindings = <&m_develop>; layers = <0>; };  // D+L
+        combo_system       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 6>; bindings = <&m_system>; layers = <0>; };  // S+Y
+        combo_product      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 7>; bindings = <&m_product>; layers = <0>; };  // R+U
+        combo_student      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 7>; bindings = <&m_student>; layers = <0>; };  // S+U
+        combo_process      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 14>; bindings = <&m_process>; layers = <0>; };  // P+S
+        combo_method       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 15>; bindings = <&m_method>; layers = <0>; };  // T+D
+        combo_research     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 18>; bindings = <&m_research>; layers = <0>; };  // A+H
+        combo_water        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 4>; bindings = <&m_water>; layers = <0>; };  // W+R
+        combo_article      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 27>; bindings = <&m_article>; layers = <0>; };  // T+C
+        combo_support      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 10>; bindings = <&m_support>; layers = <0>; };  // U+P
+        combo_evidence     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <28 8>; bindings = <&m_evidence>; layers = <0>; };  // V+I
+        combo_activity     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 6>; bindings = <&m_activity>; layers = <0>; };  // A+Y
+        combo_nature       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 7>; bindings = <&m_nature>; layers = <0>; };  // A+U
+        combo_theory       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 6>; bindings = <&m_theory>; layers = <0>; };  // O+Y
+        combo_history      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 6>; bindings = <&m_history>; layers = <0>; };  // I+Y
+        combo_quality      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 21>; bindings = <&m_quality>; layers = <0>; };  // U+L
+        combo_security     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 6>; bindings = <&m_security>; layers = <0>; };  // C+Y
+        combo_economy      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 6>; bindings = <&m_economy>; layers = <0>; };  // M+Y
+        combo_industry     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 4>; bindings = <&m_industry>; layers = <0>; };  // D+R
+        combo_media        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 8>; bindings = <&m_media>; layers = <0>; };  // M+I
+        combo_practice     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 27>; bindings = <&m_practice>; layers = <0>; };  // P+C
+        combo_education    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 30>; bindings = <&m_education>; layers = <0>; };  // U+N
+        combo_management   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 17>; bindings = <&m_management>; layers = <0>; };  // N+G
+        combo_level        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 28>; bindings = <&m_level>; layers = <0>; };  // L+V
+        combo_relationship { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 10>; bindings = <&m_relationship>; layers = <0>; };  // H+P
+        combo_material     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 21>; bindings = <&m_material>; layers = <0>; };  // M+L
+        combo_behavior     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 4>; bindings = <&m_behavior>; layers = <0>; };  // B+R
+        combo_view         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 2>; bindings = <&m_view>; layers = <0>; };  // I+W
+        combo_effect       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 5>; bindings = <&m_effect>; layers = <0>; };  // F+T
+        combo_policy       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 6>; bindings = <&m_policy>; layers = <0>; };  // L+Y
+        combo_field        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 8>; bindings = <&m_field>; layers = <0>; };  // F+I
+        combo_daughter     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 18>; bindings = <&m_daughter>; layers = <0>; };  // D+H
+        combo_teacher      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 18>; bindings = <&m_teacher>; layers = <0>; };  // C+H
+        combo_page         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 17>; bindings = <&m_page>; layers = <0>; };  // P+G
+        combo_force        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 27>; bindings = <&m_force>; layers = <0>; };  // F+C
+        combo_truth        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 18>; bindings = <&m_truth>; layers = <0>; };  // U+H
+        combo_value        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <28 7>; bindings = <&m_value>; layers = <0>; };  // V+U
         combo_through   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 4>;   bindings = <&m_through>;   layers = <0>; };  // T+H+R
         combo_there     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 3>;   bindings = <&m_there>;     layers = <0>; };  // T+H+E
         combo_than      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 13>;  bindings = <&m_than>;      layers = <0>; };  // T+H+A
