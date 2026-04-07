@@ -203,6 +203,16 @@ To adjust sensitivity, edit the `&mt` block in [`config/ergonaut_one.keymap`](co
 - **Too sensitive?** Increase `tapping-term-ms` (try 300–350ms) or `require-prior-idle-ms` (try 200–250ms)
 - **Too slow to activate?** Decrease `tapping-term-ms` (try 230–260ms)
 
+### Tap-Dance
+
+Double-tap keys for extra functionality (150ms window):
+
+| Key | 1 Tap | 2 Taps | Use case |
+|-----|-------|--------|----------|
+| **Backspace** | Backspace | Ctrl+Backspace | Delete word on double-tap |
+| **Dot** | `.` | `:` | Vim command mode without SYM layer |
+| **Comma** | `,` | `;` | Semicolon without SYM layer |
+
 ### Elixir Macros
 All Elixir operators are pre-spaced for faster typing:
 ```elixir
