@@ -401,6 +401,8 @@
             bindings = <&kp M &kp U &kp C &kp H &kp SPACE>; };
         m_many: m_many { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
             bindings = <&kp M &kp A &kp N &kp Y &kp SPACE>; };
+        m_name: m_name { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
+            bindings = <&kp N &kp A &kp M &kp E &kp SPACE>; };
         m_less: m_less { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
             bindings = <&kp L &kp E &kp S &kp S &kp SPACE>; };
         m_number: m_number { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>;
