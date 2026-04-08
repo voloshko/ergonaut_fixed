@@ -241,7 +241,7 @@ combos:
 - p: [6, 4]
   k: '&m_your'
   l: [MAIN]
-- p: [27, 15]
+- p: [27, 9]
   k: '&m_could'
   l: [MAIN]
 - p: [14, 18]
@@ -283,7 +283,7 @@ combos:
 - p: [3, 28]
   k: '&m_even'
   l: [MAIN]
-- p: [28, 4]
+- p: [28, 6]
   k: '&m_very'
   l: [MAIN]
 - p: [2, 20]
@@ -346,8 +346,309 @@ combos:
 - p: [13, 3]
   k: '&m_are'
   l: [MAIN]
-- p: [2, 14]
+- p: [13, 14]
   k: '&m_was'
+  l: [MAIN]
+- p: [13, 8]
+  k: '&m_said'
+  l: [MAIN]
+- p: [9, 20]
+  k: '&m_look'
+  l: [MAIN]
+- p: [2, 5]
+  k: '&m_want'
+  l: [MAIN]
+- p: [8, 3]
+  k: '&m_give'
+  l: [MAIN]
+- p: [8, 30]
+  k: '&m_find'
+  l: [MAIN]
+- p: [5, 3]
+  k: '&m_tell'
+  l: [MAIN]
+- p: [14, 3]
+  k: '&m_seem'
+  l: [MAIN]
+- p: [3, 21]
+  k: '&m_feel'
+  l: [MAIN]
+- p: [13, 28]
+  k: '&m_leave'
+  l: [MAIN]
+- p: [27, 13]
+  k: '&m_call'
+  l: [MAIN]
+- p: [13, 4]
+  k: '&m_start'
+  l: [MAIN]
+- p: [14, 9]
+  k: '&m_show'
+  l: [MAIN]
+- p: [3, 4]
+  k: '&m_hear'
+  l: [MAIN]
+- p: [10, 13]
+  k: '&m_play'
+  l: [MAIN]
+  a: right
+- p: [31, 3]
+  k: '&m_move'
+  l: [MAIN]
+- p: [29, 3]
+  k: '&m_believe'
+  l: [MAIN]
+- p: [9, 15]
+  k: '&m_hold'
+  l: [MAIN]
+- p: [3, 30]
+  k: '&m_begin'
+  l: [MAIN]
+- p: [5, 21]
+  k: '&m_talk'
+  l: [MAIN]
+- p: [5, 4]
+  k: '&m_turn'
+  l: [MAIN]
+- p: [7, 5]
+  k: '&m_must'
+  l: [MAIN]
+- p: [7, 27]
+  k: '&m_much'
+  l: [MAIN]
+- p: [31, 13]
+  k: '&m_many'
+  l: [MAIN]
+- p: [21, 14]
+  k: '&m_less'
+  l: [MAIN]
+- p: [30, 4]
+  k: '&m_number'
+  l: [MAIN]
+- p: [10, 4]
+  k: '&m_part'
+  l: [MAIN]
+- p: [10, 21]
+  k: '&m_place'
+  l: [MAIN]
+- p: [9, 30]
+  k: '&m_down'
+  l: [MAIN]
+- p: [3, 16]
+  k: '&m_left'
+  l: [MAIN]
+- p: [4, 9]
+  k: '&m_problem'
+  l: [MAIN]
+- p: [13, 15]
+  k: '&m_hand'
+  l: [MAIN]
+- p: [27, 14]
+  k: '&m_case'
+  l: [MAIN]
+- p: [3, 6]
+  k: '&m_early'
+  l: [MAIN]
+- p: [18, 3]
+  k: '&m_change'
+  l: [MAIN]
+- p: [8, 15]
+  k: '&m_kind'
+  l: [MAIN]
+- p: [3, 26]
+  k: '&m_next'
+  l: [MAIN]
+- p: [29, 9]
+  k: '&m_both'
+  l: [MAIN]
+- p: [9, 13]
+  k: '&m_social'
+  l: [MAIN]
+- p: [9, 8]
+  k: '&m_doing'
+  l: [MAIN]
+- p: [17, 8]
+  k: '&m_going'
+  l: [MAIN]
+- p: [30, 31]
+  k: '&m_name'
+  l: [MAIN]
+- p: [14, 8]
+  k: '&m_possible'
+  l: [MAIN]
+- p: [17, 4]
+  k: '&m_general'
+  l: [MAIN]
+- p: [18, 9]
+  k: '&m_school'
+  l: [MAIN]
+- p: [18, 8]
+  k: '&m_high'
+  l: [MAIN]
+- p: [7, 3]
+  k: '&m_business'
+  l: [MAIN]
+- p: [8, 7]
+  k: '&m_issue'
+  l: [MAIN]
+- p: [14, 15]
+  k: '&m_side'
+  l: [MAIN]
+- p: [10, 8]
+  k: '&m_public'
+  l: [MAIN]
+- p: [13, 20]
+  k: '&m_market'
+  l: [MAIN]
+- p: [10, 9]
+  k: '&m_program'
+  l: [MAIN]
+- p: [7, 9]
+  k: '&m_question'
+  l: [MAIN]
+- p: [17, 9]
+  k: '&m_government'
+  l: [MAIN]
+- p: [9, 31]
+  k: '&m_company'
+  l: [MAIN]
+- p: [2, 3]
+  k: '&m_week'
+  l: [MAIN]
+- p: [8, 21]
+  k: '&m_family'
+  l: [MAIN]
+- p: [14, 4]
+  k: '&m_service'
+  l: [MAIN]
+- p: [4, 8]
+  k: '&m_friend'
+  l: [MAIN]
+- p: [4, 27]
+  k: '&m_price'
+  l: [MAIN]
+- p: [10, 5]
+  k: '&m_report'
+  l: [MAIN]
+- p: [27, 8]
+  k: '&m_decision'
+  l: [MAIN]
+- p: [10, 30]
+  k: '&m_parent'
+  l: [MAIN]
+- p: [8, 5]
+  k: '&m_situation'
+  l: [MAIN]
+- p: [15, 21]
+  k: '&m_develop'
+  l: [MAIN]
+- p: [14, 6]
+  k: '&m_system'
+  l: [MAIN]
+- p: [4, 7]
+  k: '&m_product'
+  l: [MAIN]
+- p: [14, 7]
+  k: '&m_student'
+  l: [MAIN]
+- p: [10, 14]
+  k: '&m_process'
+  l: [MAIN]
+- p: [5, 15]
+  k: '&m_method'
+  l: [MAIN]
+- p: [13, 18]
+  k: '&m_research'
+  l: [MAIN]
+- p: [2, 4]
+  k: '&m_water'
+  l: [MAIN]
+- p: [5, 27]
+  k: '&m_article'
+  l: [MAIN]
+- p: [7, 10]
+  k: '&m_support'
+  l: [MAIN]
+- p: [28, 8]
+  k: '&m_evidence'
+  l: [MAIN]
+- p: [13, 6]
+  k: '&m_activity'
+  l: [MAIN]
+- p: [13, 7]
+  k: '&m_nature'
+  l: [MAIN]
+- p: [9, 6]
+  k: '&m_theory'
+  l: [MAIN]
+- p: [8, 6]
+  k: '&m_history'
+  l: [MAIN]
+- p: [7, 21]
+  k: '&m_quality'
+  l: [MAIN]
+- p: [27, 6]
+  k: '&m_security'
+  l: [MAIN]
+- p: [31, 6]
+  k: '&m_economy'
+  l: [MAIN]
+- p: [15, 4]
+  k: '&m_industry'
+  l: [MAIN]
+- p: [31, 8]
+  k: '&m_media'
+  l: [MAIN]
+- p: [10, 27]
+  k: '&m_practice'
+  l: [MAIN]
+- p: [7, 30]
+  k: '&m_education'
+  l: [MAIN]
+- p: [30, 17]
+  k: '&m_management'
+  l: [MAIN]
+- p: [21, 28]
+  k: '&m_level'
+  l: [MAIN]
+- p: [18, 10]
+  k: '&m_relationship'
+  l: [MAIN]
+- p: [31, 21]
+  k: '&m_material'
+  l: [MAIN]
+- p: [29, 4]
+  k: '&m_behavior'
+  l: [MAIN]
+- p: [8, 2]
+  k: '&m_view'
+  l: [MAIN]
+- p: [16, 5]
+  k: '&m_effect'
+  l: [MAIN]
+- p: [21, 6]
+  k: '&m_policy'
+  l: [MAIN]
+- p: [16, 8]
+  k: '&m_field'
+  l: [MAIN]
+- p: [15, 18]
+  k: '&m_daughter'
+  l: [MAIN]
+- p: [27, 18]
+  k: '&m_teacher'
+  l: [MAIN]
+- p: [10, 17]
+  k: '&m_page'
+  l: [MAIN]
+- p: [16, 27]
+  k: '&m_force'
+  l: [MAIN]
+- p: [7, 18]
+  k: '&m_truth'
+  l: [MAIN]
+- p: [28, 7]
+  k: '&m_value'
   l: [MAIN]
 - p: [5, 18, 4]
   k: '&m_through'
@@ -364,7 +665,7 @@ combos:
 - p: [5, 18, 9]
   k: '&m_those'
   l: [MAIN]
-- p: [5, 18, 17]
+- p: [18, 8, 17]
   k: '&m_thing'
   l: [MAIN]
 - p: [5, 18, 7]
@@ -373,7 +674,7 @@ combos:
 - p: [5, 4, 3]
   k: '&m_three'
   l: [MAIN]
-- p: [5, 17, 4]
+- p: [5, 9, 4]
   k: '&m_together'
   l: [MAIN]
 - p: [13, 30, 5]
@@ -385,7 +686,7 @@ combos:
 - p: [2, 18, 5]
   k: '&m_whether'
   l: [MAIN]
-- p: [29, 5, 30]
+- p: [29, 3, 30]
   k: '&m_between'
   l: [MAIN]
 - p: [14, 31, 5]
@@ -394,13 +695,13 @@ combos:
 - p: [13, 4, 15]
   k: '&m_already'
   l: [MAIN]
-- p: [13, 2, 14]
+- p: [13, 21, 2]
   k: '&m_always'
   l: [MAIN]
 - p: [13, 4, 30]
   k: '&m_around'
   l: [MAIN]
-- p: [15, 16, 4]
+- p: [15, 8, 4]
   k: '&m_different'
   l: [MAIN]
 - p: [31, 10, 4]
@@ -409,10 +710,10 @@ combos:
 - p: [14, 5, 21]
   k: '&m_still'
   l: [MAIN]
-- p: [3, 28, 4]
+- p: [3, 28, 6]
   k: '&m_every'
   l: [MAIN]
-- p: [16, 14, 4]
+- p: [16, 8, 14]
   k: '&m_first'
   l: [MAIN]
 - p: [2, 4, 21]
@@ -421,10 +722,10 @@ combos:
 - p: [21, 5, 8]
   k: '&m_little'
   l: [MAIN]
-- p: [4, 17, 5]
+- p: [4, 8, 17]
   k: '&m_right'
   l: [MAIN]
-- p: [29, 30, 17]
+- p: [29, 8, 30]
   k: '&m_being'
   l: [MAIN]
 - p: [14, 31, 21]
@@ -463,7 +764,7 @@ combos:
 - p: [10, 30, 5]
   k: '&m_point'
   l: [MAIN]
-- p: [21, 9, 17]
+- p: [9, 30, 17]
   k: '&m_long'
   l: [MAIN]
 - p: [20, 3, 10]
@@ -472,7 +773,7 @@ combos:
 - p: [14, 13, 31]
   k: '&m_same'
   l: [MAIN]
-- p: [3, 27, 18]
+- p: [3, 13, 18]
   k: '&m_each'
   l: [MAIN]
 - p: [18, 21, 10]
@@ -523,13 +824,13 @@ combos:
 - p: [27, 20, 10]
   k: '&m_checkpoint'
   l: [MAIN]
-- p: [21, 17, 5]
+- p: [21, 17, 8]
   k: '&m_logit'
   l: [MAIN]
-- p: [3, 10, 27]
+- p: [3, 10, 9]
   k: '&m_epoch'
   l: [MAIN]
-- p: [29, 5, 27]
+- p: [29, 13, 27]
   k: '&m_batch'
   l: [MAIN]
 - p: [31, 15, 21]
@@ -571,7 +872,7 @@ combos:
 - p: [4, 3, 5]
   k: '&m_return'
   l: [MAIN]
-- p: [15, 4, 28]
+- p: [15, 4, 8]
   k: '&m_derive'
   l: [MAIN]
 - p: [27, 21, 14]
@@ -583,7 +884,7 @@ combos:
 - p: [29, 4, 2]
   k: '&m_borrow'
   l: [MAIN]
-- p: [31, 7, 5]
+- p: [31, 5, 30]
   k: '&m_mut'
   l: [MAIN]
 - p: [31, 30, 15]
@@ -607,22 +908,22 @@ combos:
 - p: [16, 30, 27]
   k: '&m_function'
   l: [MAIN]
-- p: [27, 21, 15]
+- p: [27, 21, 13]
   k: '&m_claude'
   l: [MAIN]
 - p: [13, 5, 10]
   k: '&m_anthropic'
   l: [MAIN]
-- p: [13, 25, 4]
+- p: [13, 7, 4]
   k: '&m_azure'
   l: [MAIN]
-- p: [15, 27, 20]
+- p: [15, 7, 20]
   k: '&m_duckdb'
   l: [MAIN]
 - p: [8, 27, 29]
   k: '&m_iceberg'
   l: [MAIN]
-- p: [5, 4, 30, 16]
+- p: [5, 4, 13, 30]
   k: '&m_transformer'
   l: [MAIN]
 - p: [20, 2, 30, 5]
@@ -640,13 +941,13 @@ combos:
 - p: [18, 14, 20, 21]
   k: '&m_haskell'
   l: [MAIN]
-- p: [16, 4, 21, 13]
+- p: [16, 9, 13, 30]
   k: '&m_forall'
   l: [MAIN]
 - p: [14, 20, 30, 21]
   k: '&m_skinly'
   l: [MAIN]
-- p: [29, 4, 15, 16]
+- p: [29, 3, 8, 4]
   k: '&m_beiersdorf'
   l: [MAIN]
 - p: [13, 4, 27, 18]
@@ -685,6 +986,6 @@ combos:
   k: ⏎
   l: [MAIN]
   draw_separate: true
-- p: [18, 30]
+- p: [18, 31]
   k: ⌫
   l: [MAIN]
