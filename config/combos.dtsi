@@ -10,7 +10,7 @@
 //                   L=21 M=31 N=30 O=9 P=10 Q=1 R=4 S=14 T=5 U=7 V=28
 //                   W=2 X=26 Y=6 Z=25
 //
-// Word combos: timeout-ms=40, require-prior-idle-ms=150, layer 0 only.
+// Word combos: timeout-ms=40, require-prior-idle-ms=250, layer 0 only.
 // Utility combos: timeout-ms=30, no prior-idle, layer 0 only.
 //
 // 2-key conflict resolutions (ZMK combos are order-independent):
@@ -564,279 +564,279 @@
         compatible = "zmk,combos";
 
         // === 2-key word combos (158) ===
-        combo_the     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18>;  bindings = <&m_the>;     layers = <0>; };  // T+H
-        combo_and     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 30>; bindings = <&m_and>;     layers = <0>; };  // A+N
-        combo_that    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 13>;  bindings = <&m_that>;    layers = <0>; };  // T+A
-        combo_have    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 28>; bindings = <&m_have>;    layers = <0>; };  // H+V
-        combo_with    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 18>;  bindings = <&m_with>;    layers = <0>; };  // W+H
-        combo_for     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 9>;  bindings = <&m_for>;     layers = <0>; };  // F+O
-        combo_not     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 5>;  bindings = <&m_not>;     layers = <0>; };  // N+T
-        combo_you     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <6 7>;   bindings = <&m_you>;     layers = <0>; };  // Y+U
-        combo_this    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 14>;  bindings = <&m_this>;    layers = <0>; };  // T+S
-        combo_but     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 7>;  bindings = <&m_but>;     layers = <0>; };  // B+U
-        combo_from    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 31>; bindings = <&m_from>;    layers = <0>; };  // F+M
-        combo_they    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 6>;   bindings = <&m_they>;    layers = <0>; };  // T+Y
-        combo_will    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 21>;  bindings = <&m_will>;    layers = <0>; };  // W+L
-        combo_would   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 15>;  bindings = <&m_would>;   layers = <0>; };  // W+D
-        combo_what    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 13>;  bindings = <&m_what>;    layers = <0>; };  // W+A
-        combo_about   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 29>; bindings = <&m_about>;   layers = <0>; };  // A+B
-        combo_which   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 27>;  bindings = <&m_which>;   layers = <0>; };  // W+C
-        combo_when    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 30>;  bindings = <&m_when>;    layers = <0>; };  // W+N
-        combo_just    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <19 14>; bindings = <&m_just>;    layers = <0>; };  // J+S
-        combo_know    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <20 30>; bindings = <&m_know>;    layers = <0>; };  // K+N
-        combo_like    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 27>; bindings = <&m_like>;    layers = <0>; };  // L+C
-        combo_your    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <6 4>;   bindings = <&m_your>;    layers = <0>; };  // Y+R
-        combo_could   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 9>; bindings = <&m_could>;   layers = <0>; };  // C+O
-        combo_should  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 18>; bindings = <&m_should>;  layers = <0>; };  // S+H
-        combo_before  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 16>; bindings = <&m_before>;  layers = <0>; };  // B+F
-        combo_because { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 27>; bindings = <&m_because>; layers = <0>; };  // B+C
-        combo_think   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 20>;  bindings = <&m_think>;   layers = <0>; };  // T+K
-        combo_also    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 21>; bindings = <&m_also>;    layers = <0>; };  // A+L
-        combo_after   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 16>; bindings = <&m_after>;   layers = <0>; };  // A+F
-        combo_time    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 31>;  bindings = <&m_time>;    layers = <0>; };  // T+M
-        combo_again   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 17>; bindings = <&m_again>;   layers = <0>; };  // A+G
-        combo_some    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 31>; bindings = <&m_some>;    layers = <0>; };  // S+M
-        combo_good    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 15>; bindings = <&m_good>;    layers = <0>; };  // G+D
-        combo_more    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 4>;  bindings = <&m_more>;    layers = <0>; };  // M+R
-        combo_never   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 28>; bindings = <&m_never>;   layers = <0>; };  // N+V
-        combo_even    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 28>;  bindings = <&m_even>;    layers = <0>; };  // E+V
-        combo_very    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <28 6>;  bindings = <&m_very>;    layers = <0>; };  // V+Y
-        combo_work    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 20>;  bindings = <&m_work>;    layers = <0>; };  // W+K
-        combo_way     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 6>;   bindings = <&m_way>;     layers = <0>; };  // W+Y
-        combo_make    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 20>; bindings = <&m_make>;    layers = <0>; };  // M+K
-        combo_need    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 15>; bindings = <&m_need>;    layers = <0>; };  // N+D
-        combo_only    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 21>; bindings = <&m_only>;    layers = <0>; };  // N+L
-        combo_been    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 30>; bindings = <&m_been>;    layers = <0>; };  // B+N
-        combo_while   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 21>; bindings = <&m_while>;   layers = <0>; };  // H+L
-        combo_can     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 30>; bindings = <&m_can>;     layers = <0>; };  // C+N
-        combo_come    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 31>; bindings = <&m_come>;    layers = <0>; };  // C+M
-        combo_one     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 3>;   bindings = <&m_one>;     layers = <0>; };  // O+E
-        combo_great   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 3>;  bindings = <&m_great>;   layers = <0>; };  // G+E
-        combo_might   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 17>; bindings = <&m_might>;   layers = <0>; };  // M+G
-        combo_found   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 30>; bindings = <&m_found>;   layers = <0>; };  // F+N
-        combo_under   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 15>;  bindings = <&m_under>;   layers = <0>; };  // U+D
-        combo_other   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 5>;   bindings = <&m_other>;   layers = <0>; };  // O+T
-        combo_people  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 3>;  bindings = <&m_people>;  layers = <0>; };  // P+E
-        combo_really  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 21>;  bindings = <&m_really>;  layers = <0>; };  // R+L
-        combo_her     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 4>;  bindings = <&m_her>;     layers = <0>; };  // H+R
-        combo_his     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 14>; bindings = <&m_his>;     layers = <0>; };  // H+S
-        combo_are     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 3>;  bindings = <&m_are>;     layers = <0>; };  // A+E
-        combo_was     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 14>;  bindings = <&m_was>;     layers = <0>; };  // A+S
+        combo_the     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18>;  bindings = <&m_the>;     layers = <0>; };  // T+H
+        combo_and     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 30>; bindings = <&m_and>;     layers = <0>; };  // A+N
+        combo_that    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 13>;  bindings = <&m_that>;    layers = <0>; };  // T+A
+        combo_have    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 28>; bindings = <&m_have>;    layers = <0>; };  // H+V
+        combo_with    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 18>;  bindings = <&m_with>;    layers = <0>; };  // W+H
+        combo_for     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 9>;  bindings = <&m_for>;     layers = <0>; };  // F+O
+        combo_not     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 5>;  bindings = <&m_not>;     layers = <0>; };  // N+T
+        combo_you     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <6 7>;   bindings = <&m_you>;     layers = <0>; };  // Y+U
+        combo_this    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 14>;  bindings = <&m_this>;    layers = <0>; };  // T+S
+        combo_but     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 7>;  bindings = <&m_but>;     layers = <0>; };  // B+U
+        combo_from    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 31>; bindings = <&m_from>;    layers = <0>; };  // F+M
+        combo_they    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 6>;   bindings = <&m_they>;    layers = <0>; };  // T+Y
+        combo_will    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 21>;  bindings = <&m_will>;    layers = <0>; };  // W+L
+        combo_would   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 15>;  bindings = <&m_would>;   layers = <0>; };  // W+D
+        combo_what    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 13>;  bindings = <&m_what>;    layers = <0>; };  // W+A
+        combo_about   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 29>; bindings = <&m_about>;   layers = <0>; };  // A+B
+        combo_which   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 27>;  bindings = <&m_which>;   layers = <0>; };  // W+C
+        combo_when    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 30>;  bindings = <&m_when>;    layers = <0>; };  // W+N
+        combo_just    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <19 14>; bindings = <&m_just>;    layers = <0>; };  // J+S
+        combo_know    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <20 30>; bindings = <&m_know>;    layers = <0>; };  // K+N
+        combo_like    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 27>; bindings = <&m_like>;    layers = <0>; };  // L+C
+        combo_your    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <6 4>;   bindings = <&m_your>;    layers = <0>; };  // Y+R
+        combo_could   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 9>; bindings = <&m_could>;   layers = <0>; };  // C+O
+        combo_should  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 18>; bindings = <&m_should>;  layers = <0>; };  // S+H
+        combo_before  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 16>; bindings = <&m_before>;  layers = <0>; };  // B+F
+        combo_because { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 27>; bindings = <&m_because>; layers = <0>; };  // B+C
+        combo_think   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 20>;  bindings = <&m_think>;   layers = <0>; };  // T+K
+        combo_also    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 21>; bindings = <&m_also>;    layers = <0>; };  // A+L
+        combo_after   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 16>; bindings = <&m_after>;   layers = <0>; };  // A+F
+        combo_time    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 31>;  bindings = <&m_time>;    layers = <0>; };  // T+M
+        combo_again   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 17>; bindings = <&m_again>;   layers = <0>; };  // A+G
+        combo_some    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 31>; bindings = <&m_some>;    layers = <0>; };  // S+M
+        combo_good    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 15>; bindings = <&m_good>;    layers = <0>; };  // G+D
+        combo_more    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 4>;  bindings = <&m_more>;    layers = <0>; };  // M+R
+        combo_never   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 28>; bindings = <&m_never>;   layers = <0>; };  // N+V
+        combo_even    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 28>;  bindings = <&m_even>;    layers = <0>; };  // E+V
+        combo_very    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <28 6>;  bindings = <&m_very>;    layers = <0>; };  // V+Y
+        combo_work    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 20>;  bindings = <&m_work>;    layers = <0>; };  // W+K
+        combo_way     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 6>;   bindings = <&m_way>;     layers = <0>; };  // W+Y
+        combo_make    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 20>; bindings = <&m_make>;    layers = <0>; };  // M+K
+        combo_need    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 15>; bindings = <&m_need>;    layers = <0>; };  // N+D
+        combo_only    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 21>; bindings = <&m_only>;    layers = <0>; };  // N+L
+        combo_been    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 30>; bindings = <&m_been>;    layers = <0>; };  // B+N
+        combo_while   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 21>; bindings = <&m_while>;   layers = <0>; };  // H+L
+        combo_can     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 30>; bindings = <&m_can>;     layers = <0>; };  // C+N
+        combo_come    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 31>; bindings = <&m_come>;    layers = <0>; };  // C+M
+        combo_one     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 3>;   bindings = <&m_one>;     layers = <0>; };  // O+E
+        combo_great   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 3>;  bindings = <&m_great>;   layers = <0>; };  // G+E
+        combo_might   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 17>; bindings = <&m_might>;   layers = <0>; };  // M+G
+        combo_found   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 30>; bindings = <&m_found>;   layers = <0>; };  // F+N
+        combo_under   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 15>;  bindings = <&m_under>;   layers = <0>; };  // U+D
+        combo_other   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 5>;   bindings = <&m_other>;   layers = <0>; };  // O+T
+        combo_people  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 3>;  bindings = <&m_people>;  layers = <0>; };  // P+E
+        combo_really  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 21>;  bindings = <&m_really>;  layers = <0>; };  // R+L
+        combo_her     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 4>;  bindings = <&m_her>;     layers = <0>; };  // H+R
+        combo_his     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 14>; bindings = <&m_his>;     layers = <0>; };  // H+S
+        combo_are     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 3>;  bindings = <&m_are>;     layers = <0>; };  // A+E
+        combo_was     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 14>;  bindings = <&m_was>;     layers = <0>; };  // A+S
 
         // === 2-key word combos (100 new) ===
 
         // === 3-key word combos — Common English (43) ===
-        combo_said         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 8>; bindings = <&m_said>; layers = <0>; };  // A+I
-        combo_look         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 20>; bindings = <&m_look>; layers = <0>; };  // O+K
-        combo_want         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 5>; bindings = <&m_want>; layers = <0>; };  // W+T
-        combo_give         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 3>; bindings = <&m_give>; layers = <0>; };  // I+E
-        combo_find         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 30>; bindings = <&m_find>; layers = <0>; };  // I+N
-        combo_tell         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 3>; bindings = <&m_tell>; layers = <0>; };  // T+E
-        combo_seem         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 3>; bindings = <&m_seem>; layers = <0>; };  // S+E
-        combo_feel         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 21>; bindings = <&m_feel>; layers = <0>; };  // E+L
-        combo_leave        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 28>; bindings = <&m_leave>; layers = <0>; };  // A+V
-        combo_call         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 13>; bindings = <&m_call>; layers = <0>; };  // C+A
-        combo_start        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 4>; bindings = <&m_start>; layers = <0>; };  // A+R
-        combo_show         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 9>; bindings = <&m_show>; layers = <0>; };  // S+O
-        combo_hear         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 4>; bindings = <&m_hear>; layers = <0>; };  // E+R
-        combo_play         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 13>; bindings = <&m_play>; layers = <0>; };  // P+A
-        combo_move         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 3>; bindings = <&m_move>; layers = <0>; };  // M+E
-        combo_believe      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 3>; bindings = <&m_believe>; layers = <0>; };  // B+E
-        combo_hold         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 15>; bindings = <&m_hold>; layers = <0>; };  // O+D
-        combo_begin        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 30>; bindings = <&m_begin>; layers = <0>; };  // E+N
-        combo_talk         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 21>; bindings = <&m_talk>; layers = <0>; };  // T+L
-        combo_turn         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4>; bindings = <&m_turn>; layers = <0>; };  // T+R
-        combo_must         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 5>; bindings = <&m_must>; layers = <0>; };  // U+T
-        combo_much         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 27>; bindings = <&m_much>; layers = <0>; };  // U+C
-        combo_many         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 13>; bindings = <&m_many>; layers = <0>; };  // M+A
-        combo_less         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 14>; bindings = <&m_less>; layers = <0>; };  // L+S
-        combo_number       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 4>; bindings = <&m_number>; layers = <0>; };  // N+R
-        combo_part         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 4>; bindings = <&m_part>; layers = <0>; };  // P+R
-        combo_place        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 21>; bindings = <&m_place>; layers = <0>; };  // P+L
-        combo_down         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 30>; bindings = <&m_down>; layers = <0>; };  // O+N
-        combo_left         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 16>; bindings = <&m_left>; layers = <0>; };  // E+F
-        combo_problem      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 9>; bindings = <&m_problem>; layers = <0>; };  // R+O
-        combo_hand         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 15>; bindings = <&m_hand>; layers = <0>; };  // A+D
-        combo_case         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 14>; bindings = <&m_case>; layers = <0>; };  // C+S
-        combo_early        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 6>; bindings = <&m_early>; layers = <0>; };  // E+Y
-        combo_change       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 3>; bindings = <&m_change>; layers = <0>; };  // H+E
-        combo_kind         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 15>; bindings = <&m_kind>; layers = <0>; };  // I+D
-        combo_next         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 26>; bindings = <&m_next>; layers = <0>; };  // E+X
-        combo_both         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 9>; bindings = <&m_both>; layers = <0>; };  // B+O
-        combo_social       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 13>; bindings = <&m_social>; layers = <0>; };  // O+A
-        combo_doing        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 8>; bindings = <&m_doing>; layers = <0>; };  // O+I
-        combo_going        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 8>; bindings = <&m_going>; layers = <0>; };  // G+I
-        combo_name_word    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 31>; bindings = <&m_name>; layers = <0>; };  // N+M (renamed to avoid combo-name conflict)
-        combo_possible     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 8>; bindings = <&m_possible>; layers = <0>; };  // S+I
-        combo_general      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 4>; bindings = <&m_general>; layers = <0>; };  // G+R
-        combo_school       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 9>; bindings = <&m_school>; layers = <0>; };  // H+O
-        combo_high         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 8>; bindings = <&m_high>; layers = <0>; };  // H+I
-        combo_business     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 3>; bindings = <&m_business>; layers = <0>; };  // U+E
-        combo_issue        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 7>; bindings = <&m_issue>; layers = <0>; };  // I+U
-        combo_side         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 15>; bindings = <&m_side>; layers = <0>; };  // S+D
-        combo_public       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 8>; bindings = <&m_public>; layers = <0>; };  // P+I
-        combo_market       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 20>; bindings = <&m_market>; layers = <0>; };  // A+K
-        combo_program      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 9>; bindings = <&m_program>; layers = <0>; };  // P+O
-        combo_question     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 9>; bindings = <&m_question>; layers = <0>; };  // U+O
-        combo_government   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 9>; bindings = <&m_government>; layers = <0>; };  // G+O
-        combo_company      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 31>; bindings = <&m_company>; layers = <0>; };  // O+M
-        combo_week         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 3>; bindings = <&m_week>; layers = <0>; };  // W+E
-        combo_family       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 21>; bindings = <&m_family>; layers = <0>; };  // I+L
-        combo_service      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 4>; bindings = <&m_service>; layers = <0>; };  // S+R
-        combo_friend       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 8>; bindings = <&m_friend>; layers = <0>; };  // R+I
-        combo_price        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 27>; bindings = <&m_price>; layers = <0>; };  // R+C
-        combo_report       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 5>; bindings = <&m_report>; layers = <0>; };  // P+T
-        combo_decision     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 8>; bindings = <&m_decision>; layers = <0>; };  // C+I
-        combo_parent       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 30>; bindings = <&m_parent>; layers = <0>; };  // P+N
-        combo_situation    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 5>; bindings = <&m_situation>; layers = <0>; };  // I+T
-        combo_develop      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 21>; bindings = <&m_develop>; layers = <0>; };  // D+L
-        combo_system       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 6>; bindings = <&m_system>; layers = <0>; };  // S+Y
-        combo_product      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 7>; bindings = <&m_product>; layers = <0>; };  // R+U
-        combo_student      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 7>; bindings = <&m_student>; layers = <0>; };  // S+U
-        combo_process      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 14>; bindings = <&m_process>; layers = <0>; };  // P+S
-        combo_method       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 15>; bindings = <&m_method>; layers = <0>; };  // T+D
-        combo_research     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 18>; bindings = <&m_research>; layers = <0>; };  // A+H
-        combo_water        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 4>; bindings = <&m_water>; layers = <0>; };  // W+R
-        combo_article      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 27>; bindings = <&m_article>; layers = <0>; };  // T+C
-        combo_support      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 10>; bindings = <&m_support>; layers = <0>; };  // U+P
-        combo_evidence     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <28 8>; bindings = <&m_evidence>; layers = <0>; };  // V+I
-        combo_activity     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 6>; bindings = <&m_activity>; layers = <0>; };  // A+Y
-        combo_nature       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 7>; bindings = <&m_nature>; layers = <0>; };  // A+U
-        combo_theory       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 6>; bindings = <&m_theory>; layers = <0>; };  // O+Y
-        combo_history      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 6>; bindings = <&m_history>; layers = <0>; };  // I+Y
-        combo_quality      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 21>; bindings = <&m_quality>; layers = <0>; };  // U+L
-        combo_security     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 6>; bindings = <&m_security>; layers = <0>; };  // C+Y
-        combo_economy      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 6>; bindings = <&m_economy>; layers = <0>; };  // M+Y
-        combo_industry     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 4>; bindings = <&m_industry>; layers = <0>; };  // D+R
-        combo_media        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 8>; bindings = <&m_media>; layers = <0>; };  // M+I
-        combo_practice     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 27>; bindings = <&m_practice>; layers = <0>; };  // P+C
-        combo_education    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 30>; bindings = <&m_education>; layers = <0>; };  // U+N
-        combo_management   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 17>; bindings = <&m_management>; layers = <0>; };  // N+G
-        combo_level        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 28>; bindings = <&m_level>; layers = <0>; };  // L+V
-        combo_relationship { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 10>; bindings = <&m_relationship>; layers = <0>; };  // H+P
-        combo_material     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 21>; bindings = <&m_material>; layers = <0>; };  // M+L
-        combo_behavior     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 4>; bindings = <&m_behavior>; layers = <0>; };  // B+R
-        combo_view         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 2>; bindings = <&m_view>; layers = <0>; };  // I+W
-        combo_effect       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 5>; bindings = <&m_effect>; layers = <0>; };  // F+T
-        combo_policy       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 6>; bindings = <&m_policy>; layers = <0>; };  // L+Y
-        combo_field        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 8>; bindings = <&m_field>; layers = <0>; };  // F+I
-        combo_daughter     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 18>; bindings = <&m_daughter>; layers = <0>; };  // D+H
-        combo_teacher      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 18>; bindings = <&m_teacher>; layers = <0>; };  // C+H
-        combo_page         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 17>; bindings = <&m_page>; layers = <0>; };  // P+G
-        combo_force        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 27>; bindings = <&m_force>; layers = <0>; };  // F+C
-        combo_truth        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 18>; bindings = <&m_truth>; layers = <0>; };  // U+H
-        combo_value        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <28 7>; bindings = <&m_value>; layers = <0>; };  // V+U
-        combo_through   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 4>;   bindings = <&m_through>;   layers = <0>; };  // T+H+R
-        combo_there     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 3>;   bindings = <&m_there>;     layers = <0>; };  // T+H+E
-        combo_than      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 13>;  bindings = <&m_than>;      layers = <0>; };  // T+H+A
-        combo_their     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 8>;   bindings = <&m_their>;     layers = <0>; };  // T+H+I
-        combo_those     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 9>;   bindings = <&m_those>;     layers = <0>; };  // T+H+O
-        combo_thing     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 8 17>;  bindings = <&m_thing>;     layers = <0>; };  // H+I+G
-        combo_though    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 18 7>;   bindings = <&m_though>;    layers = <0>; };  // T+H+U
-        combo_three     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4 3>;    bindings = <&m_three>;     layers = <0>; };  // T+R+E
-        combo_together  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 9 4>;   bindings = <&m_together>;  layers = <0>; };  // T+O+R
-        combo_another   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 30 5>;  bindings = <&m_another>;   layers = <0>; };  // A+N+T
-        combo_where     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 18 4>;   bindings = <&m_where>;     layers = <0>; };  // W+H+R
-        combo_whether   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 18 5>;   bindings = <&m_whether>;   layers = <0>; };  // W+H+T
-        combo_between   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 3 30>;  bindings = <&m_between>;   layers = <0>; };  // B+E+N
-        combo_something { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 31 5>;  bindings = <&m_something>; layers = <0>; };  // S+M+T
-        combo_already   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 4 15>;  bindings = <&m_already>;   layers = <0>; };  // A+R+D
-        combo_always    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 21 2>;  bindings = <&m_always>;    layers = <0>; };  // A+L+W
-        combo_around    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 4 30>;  bindings = <&m_around>;    layers = <0>; };  // A+R+N
-        combo_different { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 8 4>;  bindings = <&m_different>; layers = <0>; };  // D+I+R
-        combo_important { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 10 4>;  bindings = <&m_important>; layers = <0>; };  // M+P+R
-        combo_still     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 5 21>;  bindings = <&m_still>;     layers = <0>; };  // S+T+L
-        combo_every     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 28 6>;   bindings = <&m_every>;     layers = <0>; };  // E+V+Y
-        combo_first     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 8 14>;  bindings = <&m_first>;     layers = <0>; };  // F+I+S
-        combo_world     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 4 21>;   bindings = <&m_world>;     layers = <0>; };  // W+R+L
-        combo_little    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 5 8>;   bindings = <&m_little>;    layers = <0>; };  // L+T+I
-        combo_right     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 8 17>;   bindings = <&m_right>;     layers = <0>; };  // R+I+G
-        combo_being     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 8 30>; bindings = <&m_being>;     layers = <0>; };  // B+I+N
-        combo_small     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 31 21>; bindings = <&m_small>;     layers = <0>; };  // S+M+L
-        combo_take      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 13 20>;  bindings = <&m_take>;      layers = <0>; };  // T+A+K
-        combo_well      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 3 21>;   bindings = <&m_well>;      layers = <0>; };  // W+E+L
-        combo_into      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 30 5>;   bindings = <&m_into>;      layers = <0>; };  // I+N+T
-        combo_here      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 3 4>;   bindings = <&m_here>;      layers = <0>; };  // H+E+R
-        combo_since     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 8 30>;  bindings = <&m_since>;     layers = <0>; };  // S+I+N
-        combo_story     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 5 4>;   bindings = <&m_story>;     layers = <0>; };  // S+T+R
-        combo_write     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <2 4 5>;    bindings = <&m_write>;     layers = <0>; };  // W+R+T
-        combo_using     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <7 14 30>;  bindings = <&m_using>;     layers = <0>; };  // U+S+N
-        combo_actually  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 27 21>; bindings = <&m_actually>;  layers = <0>; };  // A+C+L
-        combo_learn     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 4 30>;  bindings = <&m_learn>;     layers = <0>; };  // L+R+N
-        combo_point     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 30 5>;  bindings = <&m_point>;     layers = <0>; };  // P+N+T
-        combo_long      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 30 17>;  bindings = <&m_long>;      layers = <0>; };  // O+N+G
-        combo_keep      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <20 3 10>;  bindings = <&m_keep>;      layers = <0>; };  // K+E+P
-        combo_same      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 13 31>; bindings = <&m_same>;      layers = <0>; };  // S+A+M
-        combo_each      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 13 18>;  bindings = <&m_each>;      layers = <0>; };  // E+A+H
-        combo_help      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 21 10>; bindings = <&m_help>;      layers = <0>; };  // H+L+P
+        combo_said         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 8>; bindings = <&m_said>; layers = <0>; };  // A+I
+        combo_look         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 20>; bindings = <&m_look>; layers = <0>; };  // O+K
+        combo_want         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 5>; bindings = <&m_want>; layers = <0>; };  // W+T
+        combo_give         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 3>; bindings = <&m_give>; layers = <0>; };  // I+E
+        combo_find         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 30>; bindings = <&m_find>; layers = <0>; };  // I+N
+        combo_tell         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 3>; bindings = <&m_tell>; layers = <0>; };  // T+E
+        combo_seem         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 3>; bindings = <&m_seem>; layers = <0>; };  // S+E
+        combo_feel         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 21>; bindings = <&m_feel>; layers = <0>; };  // E+L
+        combo_leave        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 28>; bindings = <&m_leave>; layers = <0>; };  // A+V
+        combo_call         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 13>; bindings = <&m_call>; layers = <0>; };  // C+A
+        combo_start        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 4>; bindings = <&m_start>; layers = <0>; };  // A+R
+        combo_show         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 9>; bindings = <&m_show>; layers = <0>; };  // S+O
+        combo_hear         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 4>; bindings = <&m_hear>; layers = <0>; };  // E+R
+        combo_play         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 13>; bindings = <&m_play>; layers = <0>; };  // P+A
+        combo_move         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 3>; bindings = <&m_move>; layers = <0>; };  // M+E
+        combo_believe      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 3>; bindings = <&m_believe>; layers = <0>; };  // B+E
+        combo_hold         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 15>; bindings = <&m_hold>; layers = <0>; };  // O+D
+        combo_begin        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 30>; bindings = <&m_begin>; layers = <0>; };  // E+N
+        combo_talk         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 21>; bindings = <&m_talk>; layers = <0>; };  // T+L
+        combo_turn         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 4>; bindings = <&m_turn>; layers = <0>; };  // T+R
+        combo_must         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 5>; bindings = <&m_must>; layers = <0>; };  // U+T
+        combo_much         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 27>; bindings = <&m_much>; layers = <0>; };  // U+C
+        combo_many         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 13>; bindings = <&m_many>; layers = <0>; };  // M+A
+        combo_less         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 14>; bindings = <&m_less>; layers = <0>; };  // L+S
+        combo_number       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 4>; bindings = <&m_number>; layers = <0>; };  // N+R
+        combo_part         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 4>; bindings = <&m_part>; layers = <0>; };  // P+R
+        combo_place        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 21>; bindings = <&m_place>; layers = <0>; };  // P+L
+        combo_down         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 30>; bindings = <&m_down>; layers = <0>; };  // O+N
+        combo_left         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 16>; bindings = <&m_left>; layers = <0>; };  // E+F
+        combo_problem      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 9>; bindings = <&m_problem>; layers = <0>; };  // R+O
+        combo_hand         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 15>; bindings = <&m_hand>; layers = <0>; };  // A+D
+        combo_case         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 14>; bindings = <&m_case>; layers = <0>; };  // C+S
+        combo_early        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 6>; bindings = <&m_early>; layers = <0>; };  // E+Y
+        combo_change       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 3>; bindings = <&m_change>; layers = <0>; };  // H+E
+        combo_kind         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 15>; bindings = <&m_kind>; layers = <0>; };  // I+D
+        combo_next         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 26>; bindings = <&m_next>; layers = <0>; };  // E+X
+        combo_both         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 9>; bindings = <&m_both>; layers = <0>; };  // B+O
+        combo_social       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 13>; bindings = <&m_social>; layers = <0>; };  // O+A
+        combo_doing        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 8>; bindings = <&m_doing>; layers = <0>; };  // O+I
+        combo_going        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 8>; bindings = <&m_going>; layers = <0>; };  // G+I
+        combo_name_word    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 31>; bindings = <&m_name>; layers = <0>; };  // N+M (renamed to avoid combo-name conflict)
+        combo_possible     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 8>; bindings = <&m_possible>; layers = <0>; };  // S+I
+        combo_general      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 4>; bindings = <&m_general>; layers = <0>; };  // G+R
+        combo_school       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 9>; bindings = <&m_school>; layers = <0>; };  // H+O
+        combo_high         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 8>; bindings = <&m_high>; layers = <0>; };  // H+I
+        combo_business     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 3>; bindings = <&m_business>; layers = <0>; };  // U+E
+        combo_issue        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 7>; bindings = <&m_issue>; layers = <0>; };  // I+U
+        combo_side         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 15>; bindings = <&m_side>; layers = <0>; };  // S+D
+        combo_public       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 8>; bindings = <&m_public>; layers = <0>; };  // P+I
+        combo_market       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 20>; bindings = <&m_market>; layers = <0>; };  // A+K
+        combo_program      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 9>; bindings = <&m_program>; layers = <0>; };  // P+O
+        combo_question     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 9>; bindings = <&m_question>; layers = <0>; };  // U+O
+        combo_government   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 9>; bindings = <&m_government>; layers = <0>; };  // G+O
+        combo_company      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 31>; bindings = <&m_company>; layers = <0>; };  // O+M
+        combo_week         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 3>; bindings = <&m_week>; layers = <0>; };  // W+E
+        combo_family       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 21>; bindings = <&m_family>; layers = <0>; };  // I+L
+        combo_service      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 4>; bindings = <&m_service>; layers = <0>; };  // S+R
+        combo_friend       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 8>; bindings = <&m_friend>; layers = <0>; };  // R+I
+        combo_price        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 27>; bindings = <&m_price>; layers = <0>; };  // R+C
+        combo_report       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 5>; bindings = <&m_report>; layers = <0>; };  // P+T
+        combo_decision     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 8>; bindings = <&m_decision>; layers = <0>; };  // C+I
+        combo_parent       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 30>; bindings = <&m_parent>; layers = <0>; };  // P+N
+        combo_situation    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 5>; bindings = <&m_situation>; layers = <0>; };  // I+T
+        combo_develop      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 21>; bindings = <&m_develop>; layers = <0>; };  // D+L
+        combo_system       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 6>; bindings = <&m_system>; layers = <0>; };  // S+Y
+        combo_product      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 7>; bindings = <&m_product>; layers = <0>; };  // R+U
+        combo_student      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 7>; bindings = <&m_student>; layers = <0>; };  // S+U
+        combo_process      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 14>; bindings = <&m_process>; layers = <0>; };  // P+S
+        combo_method       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 15>; bindings = <&m_method>; layers = <0>; };  // T+D
+        combo_research     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 18>; bindings = <&m_research>; layers = <0>; };  // A+H
+        combo_water        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 4>; bindings = <&m_water>; layers = <0>; };  // W+R
+        combo_article      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 27>; bindings = <&m_article>; layers = <0>; };  // T+C
+        combo_support      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 10>; bindings = <&m_support>; layers = <0>; };  // U+P
+        combo_evidence     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <28 8>; bindings = <&m_evidence>; layers = <0>; };  // V+I
+        combo_activity     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 6>; bindings = <&m_activity>; layers = <0>; };  // A+Y
+        combo_nature       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 7>; bindings = <&m_nature>; layers = <0>; };  // A+U
+        combo_theory       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 6>; bindings = <&m_theory>; layers = <0>; };  // O+Y
+        combo_history      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 6>; bindings = <&m_history>; layers = <0>; };  // I+Y
+        combo_quality      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 21>; bindings = <&m_quality>; layers = <0>; };  // U+L
+        combo_security     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 6>; bindings = <&m_security>; layers = <0>; };  // C+Y
+        combo_economy      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 6>; bindings = <&m_economy>; layers = <0>; };  // M+Y
+        combo_industry     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 4>; bindings = <&m_industry>; layers = <0>; };  // D+R
+        combo_media        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 8>; bindings = <&m_media>; layers = <0>; };  // M+I
+        combo_practice     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 27>; bindings = <&m_practice>; layers = <0>; };  // P+C
+        combo_education    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 30>; bindings = <&m_education>; layers = <0>; };  // U+N
+        combo_management   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 17>; bindings = <&m_management>; layers = <0>; };  // N+G
+        combo_level        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 28>; bindings = <&m_level>; layers = <0>; };  // L+V
+        combo_relationship { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 10>; bindings = <&m_relationship>; layers = <0>; };  // H+P
+        combo_material     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 21>; bindings = <&m_material>; layers = <0>; };  // M+L
+        combo_behavior     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 4>; bindings = <&m_behavior>; layers = <0>; };  // B+R
+        combo_view         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 2>; bindings = <&m_view>; layers = <0>; };  // I+W
+        combo_effect       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 5>; bindings = <&m_effect>; layers = <0>; };  // F+T
+        combo_policy       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 6>; bindings = <&m_policy>; layers = <0>; };  // L+Y
+        combo_field        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 8>; bindings = <&m_field>; layers = <0>; };  // F+I
+        combo_daughter     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 18>; bindings = <&m_daughter>; layers = <0>; };  // D+H
+        combo_teacher      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 18>; bindings = <&m_teacher>; layers = <0>; };  // C+H
+        combo_page         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 17>; bindings = <&m_page>; layers = <0>; };  // P+G
+        combo_force        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 27>; bindings = <&m_force>; layers = <0>; };  // F+C
+        combo_truth        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 18>; bindings = <&m_truth>; layers = <0>; };  // U+H
+        combo_value        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <28 7>; bindings = <&m_value>; layers = <0>; };  // V+U
+        combo_through   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 4>;   bindings = <&m_through>;   layers = <0>; };  // T+H+R
+        combo_there     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 3>;   bindings = <&m_there>;     layers = <0>; };  // T+H+E
+        combo_than      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 13>;  bindings = <&m_than>;      layers = <0>; };  // T+H+A
+        combo_their     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 8>;   bindings = <&m_their>;     layers = <0>; };  // T+H+I
+        combo_those     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 9>;   bindings = <&m_those>;     layers = <0>; };  // T+H+O
+        combo_thing     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 8 17>;  bindings = <&m_thing>;     layers = <0>; };  // H+I+G
+        combo_though    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 18 7>;   bindings = <&m_though>;    layers = <0>; };  // T+H+U
+        combo_three     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 4 3>;    bindings = <&m_three>;     layers = <0>; };  // T+R+E
+        combo_together  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 9 4>;   bindings = <&m_together>;  layers = <0>; };  // T+O+R
+        combo_another   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 30 5>;  bindings = <&m_another>;   layers = <0>; };  // A+N+T
+        combo_where     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 18 4>;   bindings = <&m_where>;     layers = <0>; };  // W+H+R
+        combo_whether   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 18 5>;   bindings = <&m_whether>;   layers = <0>; };  // W+H+T
+        combo_between   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 3 30>;  bindings = <&m_between>;   layers = <0>; };  // B+E+N
+        combo_something { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 31 5>;  bindings = <&m_something>; layers = <0>; };  // S+M+T
+        combo_already   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 4 15>;  bindings = <&m_already>;   layers = <0>; };  // A+R+D
+        combo_always    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 21 2>;  bindings = <&m_always>;    layers = <0>; };  // A+L+W
+        combo_around    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 4 30>;  bindings = <&m_around>;    layers = <0>; };  // A+R+N
+        combo_different { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 8 4>;  bindings = <&m_different>; layers = <0>; };  // D+I+R
+        combo_important { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 10 4>;  bindings = <&m_important>; layers = <0>; };  // M+P+R
+        combo_still     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 5 21>;  bindings = <&m_still>;     layers = <0>; };  // S+T+L
+        combo_every     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 28 6>;   bindings = <&m_every>;     layers = <0>; };  // E+V+Y
+        combo_first     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 8 14>;  bindings = <&m_first>;     layers = <0>; };  // F+I+S
+        combo_world     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 4 21>;   bindings = <&m_world>;     layers = <0>; };  // W+R+L
+        combo_little    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 5 8>;   bindings = <&m_little>;    layers = <0>; };  // L+T+I
+        combo_right     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 8 17>;   bindings = <&m_right>;     layers = <0>; };  // R+I+G
+        combo_being     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 8 30>; bindings = <&m_being>;     layers = <0>; };  // B+I+N
+        combo_small     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 31 21>; bindings = <&m_small>;     layers = <0>; };  // S+M+L
+        combo_take      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 13 20>;  bindings = <&m_take>;      layers = <0>; };  // T+A+K
+        combo_well      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 3 21>;   bindings = <&m_well>;      layers = <0>; };  // W+E+L
+        combo_into      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 30 5>;   bindings = <&m_into>;      layers = <0>; };  // I+N+T
+        combo_here      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 3 4>;   bindings = <&m_here>;      layers = <0>; };  // H+E+R
+        combo_since     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 8 30>;  bindings = <&m_since>;     layers = <0>; };  // S+I+N
+        combo_story     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 5 4>;   bindings = <&m_story>;     layers = <0>; };  // S+T+R
+        combo_write     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <2 4 5>;    bindings = <&m_write>;     layers = <0>; };  // W+R+T
+        combo_using     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <7 14 30>;  bindings = <&m_using>;     layers = <0>; };  // U+S+N
+        combo_actually  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 27 21>; bindings = <&m_actually>;  layers = <0>; };  // A+C+L
+        combo_learn     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 4 30>;  bindings = <&m_learn>;     layers = <0>; };  // L+R+N
+        combo_point     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 30 5>;  bindings = <&m_point>;     layers = <0>; };  // P+N+T
+        combo_long      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 30 17>;  bindings = <&m_long>;      layers = <0>; };  // O+N+G
+        combo_keep      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <20 3 10>;  bindings = <&m_keep>;      layers = <0>; };  // K+E+P
+        combo_same      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 13 31>; bindings = <&m_same>;      layers = <0>; };  // S+A+M
+        combo_each      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 13 18>;  bindings = <&m_each>;      layers = <0>; };  // E+A+H
+        combo_help      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 21 10>; bindings = <&m_help>;      layers = <0>; };  // H+L+P
 
         // === 3-key word combos — ML/AI (23) ===
-        combo_diffusion     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 16 30>;  bindings = <&m_diffusion>;     layers = <0>; };  // D+F+N
-        combo_embedding     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 31 29>;   bindings = <&m_embedding>;     layers = <0>; };  // E+M+B
-        combo_gradient      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <17 4 15>;   bindings = <&m_gradient>;      layers = <0>; };  // G+R+D
-        combo_inference     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 30 16>;   bindings = <&m_inference>;     layers = <0>; };  // I+N+F
-        combo_training      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4 30>;    bindings = <&m_training>;      layers = <0>; };  // T+R+N
-        combo_activation    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 27 5>;   bindings = <&m_activation>;    layers = <0>; };  // A+C+T
-        combo_backprop      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 10 4>;   bindings = <&m_backprop>;      layers = <0>; };  // B+P+R
-        combo_neural        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <30 4 21>;   bindings = <&m_neural>;        layers = <0>; };  // N+R+L
-        combo_dropout       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 4 10>;   bindings = <&m_dropout>;       layers = <0>; };  // D+R+P
-        combo_dataset       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 14 5>;   bindings = <&m_dataset>;       layers = <0>; };  // D+S+T
-        combo_tokenize      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 20 30>;   bindings = <&m_tokenize>;      layers = <0>; };  // T+K+N
-        combo_latent        { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 5 30>;   bindings = <&m_latent>;        layers = <0>; };  // L+T+N
-        combo_softmax       { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 16 31>;  bindings = <&m_softmax>;       layers = <0>; };  // S+F+M
-        combo_residual      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 14 15>;   bindings = <&m_residual>;      layers = <0>; };  // R+S+D
-        combo_checkpoint    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 20 10>;  bindings = <&m_checkpoint>;    layers = <0>; };  // C+K+P
-        combo_logit         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 17 8>;   bindings = <&m_logit>;         layers = <0>; };  // L+G+I
-        combo_epoch         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 10 9>;   bindings = <&m_epoch>;         layers = <0>; };  // E+P+O
-        combo_batch         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 13 27>;   bindings = <&m_batch>;         layers = <0>; };  // B+A+C
-        combo_model         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 15 21>;  bindings = <&m_model>;         layers = <0>; };  // M+D+L
-        combo_language      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 30 17>;  bindings = <&m_language>;       layers = <0>; };  // L+N+G
-        combo_parameter     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <10 4 31>;   bindings = <&m_parameter>;     layers = <0>; };  // P+R+M
-        combo_mamba         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 13 29>;  bindings = <&m_mamba>;         layers = <0>; };  // M+A+B
-        combo_convolutional { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 30 28>;  bindings = <&m_convolutional>; layers = <0>; };  // C+N+V
+        combo_diffusion     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 16 30>;  bindings = <&m_diffusion>;     layers = <0>; };  // D+F+N
+        combo_embedding     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 31 29>;   bindings = <&m_embedding>;     layers = <0>; };  // E+M+B
+        combo_gradient      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <17 4 15>;   bindings = <&m_gradient>;      layers = <0>; };  // G+R+D
+        combo_inference     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 30 16>;   bindings = <&m_inference>;     layers = <0>; };  // I+N+F
+        combo_training      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 4 30>;    bindings = <&m_training>;      layers = <0>; };  // T+R+N
+        combo_activation    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 27 5>;   bindings = <&m_activation>;    layers = <0>; };  // A+C+T
+        combo_backprop      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 10 4>;   bindings = <&m_backprop>;      layers = <0>; };  // B+P+R
+        combo_neural        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <30 4 21>;   bindings = <&m_neural>;        layers = <0>; };  // N+R+L
+        combo_dropout       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 4 10>;   bindings = <&m_dropout>;       layers = <0>; };  // D+R+P
+        combo_dataset       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 14 5>;   bindings = <&m_dataset>;       layers = <0>; };  // D+S+T
+        combo_tokenize      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 20 30>;   bindings = <&m_tokenize>;      layers = <0>; };  // T+K+N
+        combo_latent        { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 5 30>;   bindings = <&m_latent>;        layers = <0>; };  // L+T+N
+        combo_softmax       { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 16 31>;  bindings = <&m_softmax>;       layers = <0>; };  // S+F+M
+        combo_residual      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 14 15>;   bindings = <&m_residual>;      layers = <0>; };  // R+S+D
+        combo_checkpoint    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 20 10>;  bindings = <&m_checkpoint>;    layers = <0>; };  // C+K+P
+        combo_logit         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 17 8>;   bindings = <&m_logit>;         layers = <0>; };  // L+G+I
+        combo_epoch         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 10 9>;   bindings = <&m_epoch>;         layers = <0>; };  // E+P+O
+        combo_batch         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 13 27>;   bindings = <&m_batch>;         layers = <0>; };  // B+A+C
+        combo_model         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 15 21>;  bindings = <&m_model>;         layers = <0>; };  // M+D+L
+        combo_language      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 30 17>;  bindings = <&m_language>;       layers = <0>; };  // L+N+G
+        combo_parameter     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <10 4 31>;   bindings = <&m_parameter>;     layers = <0>; };  // P+R+M
+        combo_mamba         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 13 29>;  bindings = <&m_mamba>;         layers = <0>; };  // M+A+B
+        combo_convolutional { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 30 28>;  bindings = <&m_convolutional>; layers = <0>; };  // C+N+V
 
         // === 3-key word combos — Rust (13) ===
-        combo_trait    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4 13>;   bindings = <&m_trait>;    layers = <0>; };  // T+R+A
-        combo_await    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 2 5>;   bindings = <&m_await>;    layers = <0>; };  // A+W+T
-        combo_impl     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 31 21>;  bindings = <&m_impl>;     layers = <0>; };  // I+M+L
-        combo_result   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 14 21>;  bindings = <&m_result>;   layers = <0>; };  // R+S+L
-        combo_option   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <9 5 30>;   bindings = <&m_option>;   layers = <0>; };  // O+T+N
-        combo_enum     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <3 30 31>;  bindings = <&m_enum>;     layers = <0>; };  // E+N+M
-        combo_match    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 5 27>;  bindings = <&m_match>;    layers = <0>; };  // M+T+C
-        combo_return   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <4 3 5>;    bindings = <&m_return>;   layers = <0>; };  // R+E+T
-        combo_derive   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 4 8>;  bindings = <&m_derive>;   layers = <0>; };  // D+R+I
-        combo_closure  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 21 14>; bindings = <&m_closure>;  layers = <0>; };  // C+L+S
-        combo_lifetime { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 16 5>;  bindings = <&m_lifetime>; layers = <0>; };  // L+F+T
-        combo_borrow   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 4 2>;   bindings = <&m_borrow>;   layers = <0>; };  // B+R+W
-        combo_mut      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 5 30>;   bindings = <&m_mut>;      layers = <0>; };  // M+T+N
+        combo_trait    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 4 13>;   bindings = <&m_trait>;    layers = <0>; };  // T+R+A
+        combo_await    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 2 5>;   bindings = <&m_await>;    layers = <0>; };  // A+W+T
+        combo_impl     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 31 21>;  bindings = <&m_impl>;     layers = <0>; };  // I+M+L
+        combo_result   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 14 21>;  bindings = <&m_result>;   layers = <0>; };  // R+S+L
+        combo_option   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <9 5 30>;   bindings = <&m_option>;   layers = <0>; };  // O+T+N
+        combo_enum     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <3 30 31>;  bindings = <&m_enum>;     layers = <0>; };  // E+N+M
+        combo_match    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 5 27>;  bindings = <&m_match>;    layers = <0>; };  // M+T+C
+        combo_return   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <4 3 5>;    bindings = <&m_return>;   layers = <0>; };  // R+E+T
+        combo_derive   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 4 8>;  bindings = <&m_derive>;   layers = <0>; };  // D+R+I
+        combo_closure  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 21 14>; bindings = <&m_closure>;  layers = <0>; };  // C+L+S
+        combo_lifetime { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 16 5>;  bindings = <&m_lifetime>; layers = <0>; };  // L+F+T
+        combo_borrow   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 4 2>;   bindings = <&m_borrow>;   layers = <0>; };  // B+R+W
+        combo_mut      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 5 30>;   bindings = <&m_mut>;      layers = <0>; };  // M+T+N
 
         // === 3-key word combos — Haskell (6) ===
-        combo_monad     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 30 15>; bindings = <&m_monad>;     layers = <0>; };  // M+N+D
-        combo_functor   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 27 5>;  bindings = <&m_functor>;   layers = <0>; };  // F+C+T
-        combo_maybe     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 13 6>;  bindings = <&m_maybe>;     layers = <0>; };  // M+A+Y
-        combo_monoid    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <31 30 8>;  bindings = <&m_monoid>;    layers = <0>; };  // M+N+I
-        combo_lambda    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <21 31 29>; bindings = <&m_lambda>;    layers = <0>; };  // L+M+B
-        combo_typeclass { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 10 27>;  bindings = <&m_typeclass>; layers = <0>; };  // T+P+C
+        combo_monad     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 30 15>; bindings = <&m_monad>;     layers = <0>; };  // M+N+D
+        combo_functor   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 27 5>;  bindings = <&m_functor>;   layers = <0>; };  // F+C+T
+        combo_maybe     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 13 6>;  bindings = <&m_maybe>;     layers = <0>; };  // M+A+Y
+        combo_monoid    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <31 30 8>;  bindings = <&m_monoid>;    layers = <0>; };  // M+N+I
+        combo_lambda    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <21 31 29>; bindings = <&m_lambda>;    layers = <0>; };  // L+M+B
+        combo_typeclass { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 10 27>;  bindings = <&m_typeclass>; layers = <0>; };  // T+P+C
 
         // === 3-key word combos — Other (6) ===
-        combo_function { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 30 27>; bindings = <&m_function>; layers = <0>; };  // F+N+C
-        combo_claude   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <27 21 13>; bindings = <&m_claude>;   layers = <0>; };  // C+L+A
-        combo_anthropic { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 5 10>; bindings = <&m_anthropic>; layers = <0>; };  // A+T+P
-        combo_azure    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 7 4>;  bindings = <&m_azure>;    layers = <0>; };  // A+U+R
-        combo_duckdb   { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <15 7 20>; bindings = <&m_duckdb>;   layers = <0>; };  // D+U+K
-        combo_iceberg  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 27 29>;  bindings = <&m_iceberg>;  layers = <0>; };  // I+C+B
+        combo_function { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 30 27>; bindings = <&m_function>; layers = <0>; };  // F+N+C
+        combo_claude   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <27 21 13>; bindings = <&m_claude>;   layers = <0>; };  // C+L+A
+        combo_anthropic { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 5 10>; bindings = <&m_anthropic>; layers = <0>; };  // A+T+P
+        combo_azure    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 7 4>;  bindings = <&m_azure>;    layers = <0>; };  // A+U+R
+        combo_duckdb   { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <15 7 20>; bindings = <&m_duckdb>;   layers = <0>; };  // D+U+K
+        combo_iceberg  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 27 29>;  bindings = <&m_iceberg>;  layers = <0>; };  // I+C+B
 
         // === 4-key word combos (10) ===
-        combo_transformer     { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <5 4 13 30>;   bindings = <&m_transformer>;     layers = <0>; };  // T+R+A+N
-        combo_quantization    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <20 2 30 5>;   bindings = <&m_quantization>;    layers = <0>; };  // K+W+N+T
-        combo_implementation  { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <8 31 10 21>;  bindings = <&m_implementation>;  layers = <0>; };  // I+M+P+L
-        combo_struct          { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 5 4 27>;   bindings = <&m_struct>;          layers = <0>; };  // S+T+R+C
-        combo_async           { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 14 30 27>; bindings = <&m_async>;           layers = <0>; };  // A+S+N+C
-        combo_haskell         { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <18 14 20 21>; bindings = <&m_haskell>;         layers = <0>; };  // H+S+K+L
-        combo_forall          { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <16 9 13 30>;  bindings = <&m_forall>;          layers = <0>; };  // F+O+A+N
-        combo_skinly          { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <14 20 30 21>; bindings = <&m_skinly>;          layers = <0>; };  // S+K+N+L
-        combo_beiersdorf      { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <29 3 8 4>;  bindings = <&m_beiersdorf>;      layers = <0>; };  // B+E+I+R
-        combo_architecture    { timeout-ms = <40>; require-prior-idle-ms = <150>; key-positions = <13 4 27 18>;  bindings = <&m_architecture>;    layers = <0>; };  // A+R+C+H
+        combo_transformer     { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <5 4 13 30>;   bindings = <&m_transformer>;     layers = <0>; };  // T+R+A+N
+        combo_quantization    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <20 2 30 5>;   bindings = <&m_quantization>;    layers = <0>; };  // K+W+N+T
+        combo_implementation  { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <8 31 10 21>;  bindings = <&m_implementation>;  layers = <0>; };  // I+M+P+L
+        combo_struct          { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 5 4 27>;   bindings = <&m_struct>;          layers = <0>; };  // S+T+R+C
+        combo_async           { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 14 30 27>; bindings = <&m_async>;           layers = <0>; };  // A+S+N+C
+        combo_haskell         { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <18 14 20 21>; bindings = <&m_haskell>;         layers = <0>; };  // H+S+K+L
+        combo_forall          { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <16 9 13 30>;  bindings = <&m_forall>;          layers = <0>; };  // F+O+A+N
+        combo_skinly          { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <14 20 30 21>; bindings = <&m_skinly>;          layers = <0>; };  // S+K+N+L
+        combo_beiersdorf      { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <29 3 8 4>;  bindings = <&m_beiersdorf>;      layers = <0>; };  // B+E+I+R
+        combo_architecture    { timeout-ms = <40>; require-prior-idle-ms = <250>; key-positions = <13 4 27 18>;  bindings = <&m_architecture>;    layers = <0>; };  // A+R+C+H
 
         // === Utility combos (10) — no require-prior-idle for responsiveness ===
         combo_esc   { timeout-ms = <30>; key-positions = <19 20>; bindings = <&kp ESC>;    layers = <0>; };  // J+K
