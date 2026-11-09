@@ -73,155 +73,188 @@ Activated when both SYM + NAV are held (tri-layer):
 
 ### Chords (Combos)
 
-Press two or more keys simultaneously (within 40ms) to output an entire word with a trailing space. Works on the MAIN layer only. A 150ms prior-idle guard prevents misfires during fast typing.
+Press two or more keys simultaneously (within 40ms) to output an entire word with a trailing space. Works on the MAIN layer only. A 250ms prior-idle guard prevents misfires during fast typing.
 
 Defined in `config/combos.dtsi`. Tune `timeout-ms` (combo window) and `require-prior-idle-ms` (misfire guard) to taste.
 
-**2-key word chords (158):**
+**2-key word chords — core (58):**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| T+H | the | A+N | and | T+A | that |
-| H+V | have | W+H | with | F+O | for |
-| N+T | not | Y+U | you | T+S | this |
-| B+U | but | F+M | from | T+Y | they |
-| W+L | will | W+D | would | W+A | what |
-| A+B | about | W+C | which | W+N | when |
-| J+S | just | K+N | know | L+C | like |
-| Y+R | your | C+O | could | S+H | should |
-| B+F | before | B+C | because | T+K | think |
-| A+L | also | A+F | after | T+M | time |
-| A+G | again | S+M | some | G+D | good |
-| M+R | more | N+V | never | E+V | even |
-| V+Y | very | W+K | work | W+Y | way |
-| M+K | make | N+D | need | N+L | only |
-| B+N | been | H+L | while | C+N | can |
-| C+M | come | O+E | one | G+E | great |
-| M+G | might | F+N | found | U+D | under |
-| O+T | other | P+E | people | R+L | really |
-| H+R | her | H+S | his | A+E | are |
-| A+S | was | | | | |
+| `T+H` | the | `A+N` | and | `T+A` | that |
+| `H+V` | have | `W+H` | with | `O+F` | for |
+| `T+N` | not | `Q+Y` | you | `T+S` | this |
+| `U+B` | but | `F+M` | from | `T+Y` | they |
+| `W+L` | will | `W+D` | would | `W+A` | what |
+| `A+B` | about | `W+C` | which | `W+N` | when |
+| `S+J` | just | `K+N` | know | `L+C` | like |
+| `R+Y` | your | `O+C` | could | `S+H` | should |
+| `J+B` | before | `C+B` | because | `T+K` | think |
+| `A+L` | also | `A+F` | after | `T+M` | time |
+| `A+G` | again | `S+M` | some | `D+G` | good |
+| `R+M` | more | `V+N` | never | `E+V` | even |
+| `Y+V` | very | `W+K` | work | `W+Y` | way |
+| `K+M` | make | `D+N` | need | `L+N` | only |
+| `B+N` | been | `H+L` | while | `C+N` | can |
+| `C+M` | come | `E+O` | one | `E+G` | great |
+| `G+M` | might | `F+N` | found | `U+D` | under |
+| `T+O` | other | `E+P` | people | `R+L` | really |
+| `R+H` | her | `H+Z` | his | `E+A` | are |
+| `A+S` | was |  |  |  |  |
 
-**2-key word chords (100 new):**
-
-| Chord | Word | Chord | Word | Chord | Word |
-|-------|------|-------|------|-------|------|
-| A+I | said | O+K | look | W+T | want |
-| I+E | give | I+N | find | T+E | tell |
-| S+E | seem | E+L | feel | A+V | leave |
-| C+A | call | A+R | start | S+O | show |
-| E+R | hear | P+A | play | M+E | move |
-| B+E | believe | O+D | hold | E+N | begin |
-| T+L | talk | T+R | turn | U+T | must |
-| U+C | much | M+A | many | L+S | less |
-| N+R | number | P+R | part | P+L | place |
-| O+N | down | E+F | left | R+O | problem |
-| A+D | hand | C+S | case | E+Y | early |
-| H+E | change | I+D | kind | E+X | next |
-| B+O | both | O+A | social | O+I | doing |
-| G+I | going | N+M | name | S+I | possible |
-| G+R | general | H+O | school | H+I | high |
-| U+E | business | I+U | issue | S+D | side |
-| P+I | public | A+K | market | S+N | sense |
-| P+O | program | U+O | question | G+O | government |
-| O+M | company | W+E | week | I+L | family |
-| S+R | service | R+I | friend | R+C | price |
-| P+T | report | C+I | decision | P+N | parent |
-| I+T | situation | D+L | develop | S+Y | system |
-| R+U | product | S+U | student | P+S | process |
-| T+D | method | A+H | research | W+R | water |
-| T+C | article | U+P | support | V+I | evidence |
-| A+Y | activity | A+U | nature | O+Y | theory |
-| I+Y | history | U+L | quality | C+Y | security |
-| M+Y | economy | D+R | industry | M+I | media |
-| P+C | practice | U+N | education | N+G | management |
-| L+V | level | H+P | relationship | M+L | material |
-| B+R | behavior | I+W | view | F+T | effect |
-| L+Y | policy | F+I | field | D+H | daughter |
-| C+H | teacher | P+G | page | F+C | force |
-| U+H | truth |
-
-**3-key word chords (91) — common English:**
+**2-key word chords — extended (100):**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| T+H+R | through | T+H+E | there | T+H+A | than |
-| T+H+I | their | T+H+O | those | H+I+G | thing |
-| T+H+U | though | T+R+E | three | T+O+R | together |
-| A+N+T | another | W+H+R | where | W+H+T | whether |
-| B+E+N | between | S+M+T | something | A+R+D | already |
-| A+L+W | always | A+R+N | around | D+I+R | different |
-| M+P+R | important | S+T+L | still | E+V+Y | every |
-| F+I+S | first | W+R+L | world | L+T+I | little |
-| R+I+G | right | B+I+N | being | S+M+L | small |
-| T+A+K | take | W+E+L | well | I+N+T | into |
-| H+E+R | here | S+I+N | since | S+T+R | story |
-| W+R+T | write | U+S+N | using | A+C+L | actually |
-| L+R+N | learn | P+N+T | point | O+N+G | long |
-| K+E+P | keep | S+A+M | same | E+A+H | each |
-| H+L+P | help | | | | |
+| `Y+A` | activity | `T+C` | article | `E+N` | begin |
+| `O+V` | behavior | `E+B` | believe | `O+B` | both |
+| `E+U` | business | `A+C` | call | `S+C` | case |
+| `E+H` | change | `O+M` | company | `D+H` | daughter |
+| `I+C` | decision | `D+L` | develop | `I+O` | doing |
+| `O+N` | down | `E+Y` | early | `Y+X` | economy |
+| `U+Z` | education | `F+J` | effect | `I+V` | evidence |
+| `I+L` | family | `E+L` | feel | `I+F` | field |
+| `I+N` | find | `F+C` | force | `R+I` | friend |
+| `G+L` | general | `E+I` | give | `I+G` | going |
+| `O+G` | government | `A+D` | hand | `E+R` | hear |
+| `I+H` | high | `Y+I` | history | `O+D` | hold |
+| `R+D` | industry | `U+I` | issue | `I+D` | kind |
+| `A+V` | leave | `E+F` | left | `S+L` | less |
+| `L+V` | level | `O+K` | look | `G+N` | management |
+| `A+M` | many | `A+K` | market | `L+M` | material |
+| `I+M` | media | `T+D` | method | `E+M` | move |
+| `U+C` | much | `T+U` | must | `Z+M` | name |
+| `U+A` | nature | `E+X` | next | `R+N` | number |
+| `P+G` | page | `P+N` | parent | `R+P` | part |
+| `P+L` | place | `P+A` | play | `Y+L` | policy |
+| `I+S` | possible | `P+C` | practice | `R+C` | price |
+| `R+O` | problem | `P+S` | process | `R+U` | product |
+| `O+P` | program | `I+P` | public | `U+L` | quality |
+| `U+O` | question | `P+H` | relationship | `T+P` | report |
+| `A+H` | research | `I+A` | said | `O+H` | school |
+| `Y+C` | security | `E+S` | seem | `R+S` | service |
+| `O+S` | show | `S+D` | side | `T+I` | situation |
+| `O+A` | social | `R+A` | start | `U+S` | student |
+| `U+P` | support | `Y+S` | system | `T+L` | talk |
+| `H+C` | teacher | `E+T` | tell | `Y+O` | theory |
+| `U+X` | truth | `Q+U` | turn | `U+V` | value |
+| `W+I` | view | `W+T` | want | `W+R` | water |
+| `W+E` | week |  |  |  |  |
 
-**3-key word chords — ML/AI:**
-
-| Chord | Word | Chord | Word | Chord | Word |
-|-------|------|-------|------|-------|------|
-| D+F+N | diffusion | E+M+B | embedding | G+R+D | gradient |
-| I+N+F | inference | T+R+N | training | A+C+T | activation |
-| B+P+R | backprop | N+R+L | neural | D+R+P | dropout |
-| D+S+T | dataset | T+K+N | tokenize | L+T+N | latent |
-| S+F+M | softmax | R+S+D | residual | C+K+P | checkpoint |
-| L+G+I | logit | E+P+O | epoch | B+A+C | batch |
-| M+D+L | model | L+N+G | language | P+R+M | parameter |
-| M+A+B | mamba | C+N+V | convolutional | | |
-
-**3-key word chords — Rust:**
-
-| Chord | Word | Chord | Word | Chord | Word |
-|-------|------|-------|------|-------|------|
-| T+R+A | trait | A+W+T | await | I+M+L | impl |
-| R+S+L | Result< | O+T+N | Option< | E+N+M | enum |
-| M+T+C | match | R+E+T | return | D+R+I | derive |
-| C+L+S | closure | L+F+T | lifetime | B+R+W | borrow |
-| M+T+N | mut | | | | |
-
-**3-key word chords — Haskell:**
+**3-key word chords — common English (43):**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| M+N+D | monad | F+C+T | functor | M+A+Y | Maybe |
-| M+N+I | monoid | L+M+B | lambda | T+P+C | typeclass |
+| `U+O+G` | through | `E+T+H` | there | `T+A+H` | than |
+| `T+I+H` | their | `T+O+H` | those | `I+G+H` | thing |
+| `O+G+H` | though | `Q+E+H` | three | `E+O+G` | together |
+| `T+A+N` | another | `W+R+H` | where | `W+T+H` | whether |
+| `E+B+N` | between | `T+S+M` | something | `R+A+D` | already |
+| `W+A+L` | always | `R+A+N` | around | `R+I+D` | different |
+| `R+P+M` | important | `T+S+L` | still | `E+Y+V` | every |
+| `I+S+F` | first | `W+R+L` | world | `T+I+L` | little |
+| `R+I+H` | right | `I+B+N` | being | `S+L+M` | small |
+| `T+A+K` | take | `W+E+L` | well | `T+I+N` | into |
+| `E+R+H` | here | `I+S+N` | since | `R+Y+O` | story |
+| `W+E+I` | write | `U+S+G` | using | `A+L+C` | actually |
+| `R+L+N` | learn | `T+P+N` | point | `O+G+N` | long |
+| `E+P+K` | keep | `A+S+M` | same | `E+A+H` | each |
+| `P+H+L` | help |  |  |  |  |
 
-**3-key word chords — other:**
+**3-key word chords — ML/AI (23):**
 
 | Chord | Word | Chord | Word | Chord | Word |
 |-------|------|-------|------|-------|------|
-| F+N+C | function | C+L+A | Claude | A+T+P | Anthropic |
-| A+U+R | Azure | D+U+K | duckdb | I+C+B | iceberg |
+| `D+F+N` | diffusion | `E+B+M` | embedding | `I+D+G` | gradient |
+| `I+F+N` | inference | `I+G+N` | training | `T+A+C` | activation |
+| `P+K+B` | backprop | `E+R+U` | neural | `R+P+D` | dropout |
+| `T+S+D` | dataset | `T+K+N` | tokenize | `T+L+N` | latent |
+| `S+F+M` | softmax | `R+S+D` | residual | `P+K+C` | checkpoint |
+| `I+G+L` | logit | `E+O+P` | epoch | `A+C+B` | batch |
+| `D+L+M` | model | `G+L+N` | language | `E+P+M` | parameter |
+| `A+B+M` | mamba | `C+V+N` | convolutional |  |  |
+
+**3-key word chords — Rust (13):**
+
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| `R+I+A` | trait | `W+T+A` | await | `I+L+M` | impl |
+| `R+S+L` | Result< | `T+O+N` | Option< | `Q+E+U` | enum |
+| `T+C+M` | match | `E+T+U` | return | `I+D+V` | derive |
+| `S+L+C` | closure | `E+F+M` | lifetime | `W+O+B` | borrow |
+| `T+U+Z` | mut |  |  |  |  |
+
+**3-key word chords — Haskell (6):**
+
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| `O+D+M` | monad | `U+F+C` | functor | `E+Y+B` | Maybe |
+| `I+D+M` | monoid | `L+B+M` | lambda | `T+P+C` | typeclass |
+
+**3-key word chords — other (6):**
+
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| `F+C+N` | function | `U+D+L` | Claude | `T+P+A` | Anthropic |
+| `R+U+A` | Azure | `U+D+K` | duckdb | `I+C+B` | iceberg |
 
 **4-key word chords (10):**
 
-| Chord | Word | Chord | Word |
-|-------|------|-------|------|
-| T+R+A+N | transformer | K+W+N+T | quantization |
-| I+M+P+L | implementation | S+T+R+C | struct |
-| A+S+N+C | async | H+S+K+L | haskell |
-| F+O+A+N | forall | S+K+N+L | Skinly |
-| B+E+I+R | Beiersdorf | A+R+C+H | architecture |
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| `O+S+F+M` | transformer | `W+T+K+N` | quantization | `I+P+L+M` | implementation |
+| `R+U+S+C` | struct | `A+S+C+N` | async | `S+H+K+L` | haskell |
+| `O+A+F+N` | forall | `S+K+L+N` | Skinly | `O+S+D+B` | Beiersdorf |
+| `R+A+H+C` | architecture |  |  |  |  |
 
-**Utility chords:**
+**Newest common-word chords (100):**
 
-| Chord | Output |
-|-------|--------|
-| J+K | Escape |
-| D+F | Tab |
-| K+L | Tab |
-| W+F | Caps Word |
-| U+I | `(` |
-| I+O | `)` |
-| H+J | `[` |
-| J+L | `]` |
-| N+M | Enter |
-| H+M | Backspace |
+| Chord | Word | Chord | Word | Chord | Word |
+|-------|------|-------|------|-------|------|
+| `A+X+M` | am | `A+X+N` | an | `W+R+N` | answer |
+| `A+S+J` | as | `T+A+J` | at | `E+J+B` | be |
+| `K+B` | book | `Y+O+B` | boy | `Q+Y+B` | buy |
+| `Y+B` | by | `U+S+C` | cause | `H+L+C` | child |
+| `R+H+C` | children | `T+Y+C` | city | `T+U+C` | cut |
+| `Y+D` | day | `T+D+H` | death | `Q+I+D` | did |
+| `O+D+X` | do | `O+S+D` | does | `O+D+N` | done |
+| `D+V` | drive | `R+A+H` | earth | `E+T+A` | eat |
+| `E+Y+Z` | eye | `A+F+C` | fact | `F+H` | father |
+| `O+F+M` | form | `E+G+J` | get | `R+I+L` | girl |
+| `Q+O+G` | go | `O+G+Z` | got | `U+G` | group |
+| `A+D+H` | had | `A+S+H` | has | `E+H+Z` | he |
+| `D+H+X` | head | `Q+I+H` | hi | `I+H+Z` | him |
+| `I+H+V` | hit | `E+O+M` | home | `U+O+S` | house |
+| `I+A+D` | idea | `I+F+Z` | if | `I+X+N` | in |
+| `Q+I+S` | is | `T+I+Z` | it | `T+I+S` | its |
+| `Q+W+L` | law | `E+T+L` | let | `E+R+L` | letter |
+| `F+L` | life | `E+L+N` | line | `I+L+V` | live |
+| `E+S+L` | lose | `D+M` | made | `A+V+M` | man |
+| `Y+A+X` | may | `E+X+M` | me | `E+Z+M` | men |
+| `R+O+M` | mother | `Y+G` | my | `Q+O+N` | no |
+| `O+F+X` | of | `O+H+Z` | oh | `O+X+N` | on |
+| `Q+R+O` | or | `R+O+D` | order | `R+U+O` | our |
+| `T+U+O` | out | `R+P+A` | paper | `Y+P` | pay |
+| `S+N` | person | `W+P` | power | `T+U+P` | put |
+| `R+X+N` | ran | `E+R+A` | read | `R+O+N` | reason |
+| `Q+R+U` | run | `W+A+J` | saw | `Y+A+S` | say |
+| `E+S+J` | see | `E+T+S` | set | `S+H+L` | shall |
+| `E+S+H` | she | `I+S+Z` | sit | `O+S+Z` | so |
+| `E+T+M` | them | `Q+T+O` | to | `E+R+J` | tree |
+| `R+Y+X` | try | `U+P+X` | up | `Q+U+S` | us |
+| `E+U+S` | use | `W+E+J` | we | `W+E+N` | went |
+| `W+E+R` | were | `W+I+N` | win | `W+O` | word |
+| `R+Y+A` | year |  |  |  |  |
+
+**Utility chords (10):**
+
+| Chord | Output | Chord | Output |
+|-------|--------|-------|--------|
+| `J+K` | Esc | `D+F` | Tab |
+| `K+L` | Tab | `W+F` | Caps Word |
+| `J+X` | `(` | `Q+J` | `)` |
+| `J+Z` | `[` | `J+L` | `]` |
+| `J+V` | Enter | `Y+Z` | Backspace |
 
 ## Key Features
 
